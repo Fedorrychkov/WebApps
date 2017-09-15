@@ -1,0 +1,10 @@
+@mixin flex_container($justify-co, $align-it, $wrap) {
+  display: flex;
+  justify-content: $justify-co;
+  align-items: $align-it;
+  flex-wrap: $wrap;
+}
+
+@mixin transition($time) {
+  transition: $time + s;
+}

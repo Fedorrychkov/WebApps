@@ -1,0 +1,20 @@
+.contact_phone {
+  padding-left: 0;
+  color: $font-color;
+  font-size: 1.4rem;
+  outline: none;
+
+  & .material-icons {
+    position: absolute;
+    left: 0;
+    margin-left: -25px;
+  }
+
+  &:hover i {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}

@@ -1,0 +1,31 @@
+.main_form {
+  
+
+  input[type=email] {
+
+  }
+
+  .input-field {
+    
+  }
+  .input-field label {
+    
+  }
+  input[type=email]:not(.browser-default).valid, input[type=email]:not(.browser-default):focus.valid {
+    border: none;
+    box-shadow: none;
+    color: #4CAF50;
+  }
+  input[type=email]:not(.browser-default).invalid, input[type=email]:not(.browser-default):focus.invalid {
+    border: none;
+    box-shadow: none;
+    color: #F44336;
+  }
+  input[type=email]:not(.browser-default).validate+label {
+
+  }
+  input[type=email]:not(.browser-default):focus:not([readonly]) {
+    border: none;
+    box-shadow: none;
+  }
+}

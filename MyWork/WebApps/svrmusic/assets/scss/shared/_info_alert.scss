@@ -1,0 +1,24 @@
+.info_alert {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  line-height: 0;
+  background-image: -webkit-linear-gradient(left, #fee242, #fed919);
+  background-image: -o-linear-gradient(left, #fee242, #fed919);
+  background-image: linear-gradient(to right, #fee242, #fed919);
+  z-index: 9;
+
+  & i {
+    cursor: pointer;
+    padding: 2px;
+    color: -color;
+    font-size: 2rem;
+    
+    &:hover {
+      color: rgba(0,0,0,0.5);
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.welcome_form {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  @include transition(0.3);
+  
+  &:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  &__form {
+    width: 100%;
+    background-color: #fff;
+  }
+
+  &__formbox {
+    width: 100%;
+  }
+  
+  &__formbody {
+    padding: 20px 0;
+  }
+
+  &__head {
+    background-image: -webkit-linear-gradient(left, #fee242, #fed919);
+    background-image: -o-linear-gradient(left, #fee242, #fed919);
+    background-image: linear-gradient(to right, #fee242, #fed919);
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0;
+    color: $font-color;
+    font-weight: 500;
+  }
+  
+  &__formbox.input-field {
+    margin: 0 auto 15px;
+    max-width: 349px;
+  }
+  &__submit {
+    margin: 0 auto;
+    max-width: 349px;
+  }
+
+  &__input {
+    margin: 0;
+    width: 100%;
+  }
+  
+  &__button {
+    margin: 15px 0 0;
+    border: 1px solid #222;
+    background: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 10px 15px 9px;
+    @include transition(0.3);
+
+    &:focus {
+      background-color: rgba(0,0,0,0.03);
+    }
+
+    &:hover {
+      border-color: #fed919;
+      background-color: #fed919;
+    }
+  }
+
+  input[type=text]:not(.browser-default).welcome_form__input,
+  input[type=tel]:not(.browser-default).welcome_form__input {
+    margin: 0;
+    padding: 0;
+  }
+
+  input[type=text]:not(.browser-default):focus:not([readonly]).welcome_form__input,
+  input[type=tel]:not(.browser-default):focus:not([readonly]).welcome_form__input {
+    border-color: #fed919;
+    box-shadow: 0 1px 0px #fed919;
+  }
+
+  input[type=text]:not(.browser-default):focus:not([readonly]).welcome_form__input+label,
+  input[type=tel]:not(.browser-default):focus:not([readonly]).welcome_form__input+label {
+    opacity: 0;
+  }
+  
+  input[type="checkbox"]:checked+label:before {
+    border-right-color: #fed919;
+    border-bottom-color: #fed919;
+  }
+
+}

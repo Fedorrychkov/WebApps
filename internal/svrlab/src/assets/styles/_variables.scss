@@ -1,0 +1,53 @@
+$red-color:                 #b65149;
+$violet-color:              #9560b4;
+$blue-color:                #52b4e1;
+$sea-color:                 #57d0c9;
+$green-color:               #6fca89;
+$olive-color:               #a2c752;
+$yellow-color:              #f0b73d;
+$orange-color:              #f0783d;
+
+$darkest-color:             #2e363e;
+$darker-color:              #4a5159;
+$dark-color:                #6b7784;
+$gray-color:                #8f9ba9;
+$light-color:               #bac4cf;
+$lighter-color:             #d3dbe3;
+$lightest-color:            #e4ebf3;
+$smoke-color:               #f3f7fc;
+
+$offset-base:               6px;
+$offset-mc:                 $offset-base;
+$offset-xs:                 $offset-base * 1.5;
+$offset-sm:                 $offset-base * 2;
+$offset-md:                 $offset-base * 3;
+$offset-lg:                 $offset-base * 4;
+$offset-xl:                 $offset-base * 5;
+
+$gap-mc:                    $offset-base * 8;
+$gap-xs:                    $offset-base * 10;
+$gap-sm:                    $offset-base * 12;
+$gap-md:                    $offset-base * 14;
+$gap-lg:                    $offset-base * 16;
+$gap-xl:                    $offset-base * 18;
+
+$font-size-base:            16px;
+$font-size:                 1em;
+$font-size-mc:              $font-size * .65;
+$font-size-xs:              $font-size;
+$font-size-sm:              $font-size * 1.25;
+$font-size-md:              $font-size * 1.75;
+$font-size-lg:              $font-size * 2.25;
+$font-size-xl:              $font-size * 2.75;
+$font-size-xxl:             $font-size * 3.25;
+
+$screen-sm:                 320px;
+$screen-md:                 720px;
+$screen-lg:                 1024px;
+$screen-xl:                 1440px;
+
+$navbar-width:              140px;
+
+$animation-fast:            .15s;
+$animation-normal:          .30s;
+$animation-slow:            .45s;

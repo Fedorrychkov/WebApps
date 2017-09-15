@@ -1,0 +1,121 @@
+.loading {
+  @include width_and_height(40px, 40px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: allloading 10s infinite linear;
+  
+  &__bords {
+    @include loading_bord($main_color);
+    animation: loading 2s infinite linear;
+    
+    &::after {
+      @include loading_dot($main_color);
+    }
+  }
+
+  &__bords2 {
+    @include loading_bord($main_color);
+    animation: loading2 2s infinite linear;
+    
+    &::after {
+      @include loading_dot($main_color);
+    }
+  }
+
+  &__bords3 {
+    @include loading_bord($main_color);
+    animation: loading3 2s infinite linear;
+    
+    &::after {
+      @include loading_dot($main_color);
+    }
+  }
+
+  &__bords4 {
+    @include loading_bord($main_color);
+    animation: loading4 2s infinite linear;
+    
+    &::after {
+      @include loading_dot($main_color);
+    }
+  }
+
+
+  @keyframes allloading {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+  @keyframes loading {
+    from {transform: rotate(0deg);}
+    50% {transform: rotate(-90deg);}
+    to {transform: rotate(0deg);}
+  }
+  @keyframes loading2 {
+    from {transform: rotate(0deg);}
+    50% {transform: rotate(90deg);}
+    to {transform: rotate(0deg);}
+  }
+  @keyframes loading3 {
+    from {transform: rotate(180deg);}
+    50% {transform: rotate(90deg);}
+    to {transform: rotate(180deg);}
+  }
+  @keyframes loading4 {
+    from {transform: rotate(180deg);}
+    50% {transform: rotate(270deg);}
+    to {transform: rotate(180deg);}
+  }
+ /* box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid #333;
+  animation: loading 2s infinite linear;
+  transform: translate(-50%, -50%);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #333;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: loading2 2s infinite linear;
+    transform: translate(-50%, -50%);
+
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #333;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: loading3 2s infinite linear;
+    transform: translate(-50%, -50%);
+  } */
+}
+
+/*
+@keyframes loading {
+  from {width: 10px; height: 10px;}
+  50% {width: 30px; height: 30px;}
+  to {width: 10px; height: 10px;}
+} 
+@keyframes loading2 {
+  from {width: 20px; height: 20px;}
+  50% {width: 40px; height: 40px;}
+  to {width: 20px; height: 20px;}
+} 
+@keyframes loading3 {
+  from {width: 30px; height: 30px;}
+  50% {width: 50px; height: 50px;}
+  to {width: 30px; height: 30px;}
+} */

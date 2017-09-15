@@ -1,0 +1,30 @@
+@import 
+        /*____ Font styles ____*/
+        'shared/font/font.scss',
+        /*____ Font Awesome ____*/
+        'font-awesome/scss/font-awesome.scss',
+        'shared/default_styles.scss',
+        /*____ Reset default styles ____*/
+        'shared/reset.scss',
+        /*____ Variables ____*/
+        'shared/variables.scss',
+        /*____ Mixins ____*/
+        'shared/mixins.scss',
+        /*____ main block ____*/
+        'shared/main/content.scss',
+        'shared/main/main.scss',
+        'shared/main/wrapper.scss',
+        'shared/main/loading.scss',
+        /*____ Header Styles ____*/
+        'shared/header/header.scss',
+        'shared/header/header_menu.scss';
+
+body {
+  font-family: 'PTSans-Regular', Arial;
+  font-size: 18px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

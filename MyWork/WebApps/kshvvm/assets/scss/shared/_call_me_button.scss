@@ -1,0 +1,22 @@
+.call_me_button {
+  color: $font-color;
+  font-weight: 800;
+  border-radius: 30px;
+  padding: 5px 10px 4px;
+  border: 1px solid $font-color;
+  background-color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  @include transition(0.3);
+  outline: none;
+
+  &:hover {
+    @include transition(0.3);
+    background-color: rgba(0, 0, 0, 0.01);
+  }
+
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'PTSans-Bold';
+  src: url('font/PTSans-Bold.woff') format('woff'),
+       url('font/PTSans-Bold.ttf') format('truetype'),
+       url('font/PTSans-Bold.svg#PTSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT_Sans-Web-Bold';
+  src: url('font/PT_Sans-Web-Bold.eot');
+  src: url('font/PT_Sans-Web-Bold.woff2') format('woff2'),
+       url('font/PT_Sans-Web-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans-Regular';
+  src: url('font/PTSans-Regular.woff') format('woff'),
+       url('font/PTSans-Regular.ttf') format('truetype'),
+       url('font/PTSans-Regular.svg#PTSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT_Sans-Web-Regular';
+  src: url('font/PT_Sans-Web-Regular.eot');
+  src: url('font/PT_Sans-Web-Regular.woff2') format('woff2'),
+       url('font/PT_Sans-Web-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body {
+  font-family: 'PTSans-Regular', Arial;
+  font-size: 18px;
+}

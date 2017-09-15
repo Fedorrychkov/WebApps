@@ -1,0 +1,28 @@
+.contact {
+
+  &__phone {
+    position: relative;
+
+    & i {
+      font-size: 2rem;
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -60%);
+
+    }
+  }
+  
+  &__number {
+    display: inline-block;
+    font-size: 2rem;
+    padding-left: 40px;
+  }
+
+  &:hover {
+    .contact__number {
+      color: rgba(255,255,255,0.89);
+    }
+  }
+}

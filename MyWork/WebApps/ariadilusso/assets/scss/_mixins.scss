@@ -1,0 +1,18 @@
+@mixin flex_container($justify-co, $align-it, $wrap) {
+  display: flex;
+  justify-content: $justify-co;
+  align-items: $align-it;
+  flex-wrap: $wrap;
+}
+
+@mixin transition($time) {
+  transition: $time + s;
+}
+
+@mixin posAbsolute() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

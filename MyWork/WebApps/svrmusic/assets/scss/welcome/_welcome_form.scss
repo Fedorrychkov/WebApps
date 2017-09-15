@@ -1,0 +1,25 @@
+.welcome_form {
+ 
+  input[type=text]:not(.browser-default),
+  input[type=tel]:not(.browser-default) {
+    margin: 0;
+    padding: 0;
+  }
+
+  input[type=text]:not(.browser-default):focus:not([readonly]),
+  input[type=tel]:not(.browser-default):focus:not([readonly]) {
+    border-color: #fed919;
+    box-shadow: 0 1px 0px #fed919;
+  }
+
+  input[type=text]:not(.browser-default):focus:not([readonly])+label,
+  input[type=tel]:not(.browser-default):focus:not([readonly])+label {
+    opacity: 0;
+  }
+  
+  input[type="checkbox"]:checked+label:before {
+    border-right-color: #fed919;
+    border-bottom-color: #fed919;
+  }
+
+}

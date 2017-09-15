@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="imagetoolbar" content="no"/>
+  <meta http-equiv="msthemecompatible" content="no"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="format-detection" content="address=no"/>
+  <meta http-equiv="cleartype" content="on"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Aria - Дом счастливых невест</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset_styles.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css">
+  
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!--[if IE]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <style type="text/css">
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      overflow: hidden;
+      display: block;
+      background-color: #fdeff4;
+
+      animation-name: preloadBlock;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      animation-timing-function: ease-in;
+      animation-play-state: running;
+      animation-fill-mode: forwards;
+    }
+
+    #preloader::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid #222;
+      z-index: -1;
+      transform: translate3d(-50%, -50%, 0);
+
+      animation-name: preLoader;
+      animation-duration: 2s;
+      animation-delay: 0.5s;
+      animation-timing-function: ease-in;
+      animation-play-state: running;
+      animation-fill-mode: forwards;
+    }
+
+    #preloader img {
+      max-width: 250px;
+      margin: 0 auto;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+
+      animation-name: preImage;
+      animation-duration: 2s;
+      animation-delay: 0.5s;
+      animation-timing-function: ease-in;
+      animation-play-state: running;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes preImage {
+      0 { transform: translate3d(-50%, -50%, 0); opacity: 1; }
+      80% { opacity: 0; }
+      100% { transform: translate3d(-50%, -200px, 0); }    
+    }
+
+    @keyframes preLoader {
+      0 { transform: translate3d(-50%, -50%, 0); opacity: 1; }
+      80% {opacity: 0; }
+      100% { transform: translate3d(-50%, 200px, 0); }
+    }
+
+    @keyframes preloadBlock {
+      0 { display: block; }
+      100% { display: none; z-index: -10; }
+    }
+
+  </style>
+</head>
+<body>
+  <div id="preloader">
+    <img src="assets/img/logo/dark_logo.png">
+  </div>
+  <header class="header">
+    <div class="header__inner page-wrapper flex_co__between_fstart">
+      
+      <div class="header__item header__left"></div>
+      <div class="header__item header__middle">
+        <a href="#" class="header__logo_link">
+          <img src="assets/img/logo/dark_logo.png" alt="" class="header__logo">
+        </a>
+      </div>
+      <div class="header__item header__right">
+        <div class="header__contact">
+          <div class="contact">
+            <div class="contact__phone"><a class="contact__phone_link" href="tel:88312351090"><i class="material-icons contact__phone_icon">phone</i>8 (831) 235 10 90</a></div>
+            <div class="contact__button">
+              <button class="call_me_button">Записаться на примерку</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="nav__icon" data-navtoggle="">
+          <span class="nav__menu"></span>
+        </div>
+        <ul class="nav__items flex_co__between">
+          <li class="nav__item"><a href="#" class="nav__link">Свадебные платья</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Вечерние наряды</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Наши невесты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Ателье</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Новости и акции</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Фотопроекты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="welcome" id="welcome--js">
+    <div class="welcome__items slider"> <!-- carousel carousel-slider center">-->
+      <!--<div class="welcome__item carousel-item red white-text" data-slideImage="" href="#one!" style="background-image: url(assets/img/slide3.jpg);"></div>
+      <div class="welcome__item carousel-item red white-text" data-slideImage="" href="#two!" style="background-image: url(assets/img/slide2.jpg);"></div>-->
+      <ul class="slides">
+        <li>
+          <img src="assets/img/slide2.jpg">
+          <div class="welcome__slide_content wrapper">
+            <h2>Коллекция 2017</h2>
+            <p>В этом сезоне с новой коллекцией!</p>   
+            <a class="welcome__button button button__welcome" href="#">Смотреть</a> 
+          </div>
+        </li>
+        <li>
+          <img src="assets/img/slide3.jpg">
+        </li>
+        <li>
+          <img src="assets/img/slide4.jpg">
+        </li>
+        <li>
+          <img src="assets/img/slide5.jpg">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="main" data-slidecontent="">
+    <div class="collections">
+      <div class="collections__inner page-wrapper content">
+        <h2 class="content__title collections__title">Свадебные платья</h2>
+        <div class="collections__items flex_co__between_fstart">
+          <article class="dress">
+            <a href="#"><div class="dress__image" style="background-image: url(assets/img/slide2.jpg);"></div></a>
+            <div class="dress__content">
+              <a href="#"><h3 class="dress__title">Akvarel</h3></a>
+              <p class="dress__text">Коллекция 2017 года года коллекция</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- <canvas id="canvas_pink"></canvas> -->
+  <div>
+    <script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="dist/bundle.js"></script>
+    <script type="text/javascript">
+
+      function dressAdd() {
+        return $('.collections__items').append('<a href="#" class="dress"><article><div class="dress__image" style="background-image: url(assets/img/slide2.jpg);"></div><div class="dress__content"><h3 class="dress__title">Akvarel</h3><p class="dress__text">Коллекция 2017 года года коллекция</p></div></article></a>');  
+      }
+      
+      for (var i = 0; i <= 4; i++) {
+        dressAdd();
+      }
+    </script>
+<!--    <script type="text/javascript">
+      var canvas = document.getElementById("canvas_pink"), 
+      context = canvas.getContext("2d");
+
+      var wWidth = window.innerWidth;
+      var wHeight = window.innerHeight;
+      canvas.width = wWidth;
+      canvas.height = wHeight/1.4;
+      wWidth = 0;
+      function drawFrame() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        //context.beginPath();
+        wWidth +=5;
+        context.fillRect(0, 0, wWidth, wHeight);
+        setTimeout("drawFrame()", 2);
+      }
+
+      drawFrame();
+
+    </script> -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  z-index: 99;
+  padding: 20px 0 0;
+  background-color: $white-pinker;
+
+  &__socials {
+    margin: 10px 0 0;
+  }
+
+  &__inner {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  &__item {
+    width: 33%;
+  }
+
+  &__middle {
+    text-align: center;
+  }
+
+  &__right {
+    text-align: right;
+  }
+
+  &__logo {
+    overflow: hidden;
+    width: 100%;
+
+    &_link {
+      display: inline-block;
+    }
+  }
+}

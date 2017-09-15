@@ -1,0 +1,46 @@
+.header {
+  background-color: $bg_color;
+  padding: 10px 0 0;
+
+  &__left {
+    max-width: 280px;
+  }
+
+  &__right {
+  }
+
+  &__link {
+    padding-right: 20px;
+    border-right: 1px solid rgba(0,0,0,0.04);
+
+    & i {
+      margin-right: 10px;
+      color: $font_color;
+    }
+
+    & span {
+      border-bottom: 1px solid $font_color;
+    }
+    
+    &:hover {
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    &:hover span {
+      border-color: rgba(0, 0, 0, 0.7);
+    }
+
+    &:hover i {
+      color: rgba(0,0,0, 0.7);
+    }
+  }
+
+  &__contacts {
+    margin-left: 40px;
+    position: relative;
+
+    & .call_me_button {
+      margin: 3px 0 0;
+    }
+  }
+}

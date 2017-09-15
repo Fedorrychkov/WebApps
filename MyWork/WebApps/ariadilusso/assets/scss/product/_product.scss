@@ -1,0 +1,29 @@
+.product {
+
+  &__inner {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  &__title {
+    margin: 40px 0;
+  }
+  
+  &__content {
+
+  }
+  
+  &__text {
+    widows: 40%;
+    padding-left: 40px;
+  }
+
+  &__image {
+    width: 60%;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+}

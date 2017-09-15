@@ -1,0 +1,23 @@
+.footer_contact {
+
+  &__phone {
+
+    &_link {
+      font-size: 2rem;
+      white-space: pre;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:hover::after {
+        content: none;
+      }
+    }
+  }
+
+  &__title {
+    padding: 20px 0;
+    font-size: 1.1rem;
+  }
+}

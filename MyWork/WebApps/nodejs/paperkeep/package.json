@@ -1,0 +1,26 @@
+{
+  "name": "notable",
+  "version": "1.0.0",
+  "description": "Learn REST with Express and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "rest",
+    "crud"
+  ],
+  "author": "Fyodor Rychkov",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.30",
+    "mongoose": "^4.11.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

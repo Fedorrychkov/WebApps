@@ -1,0 +1,38 @@
+{
+  "name": "svrmusic",
+  "version": "1.0.0",
+  "description": "web site for autoschool",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "spec": "webpack --watch"
+  },
+  "keywords": [
+    "SVR Music",
+    "html",
+    "scss",
+    "css",
+    "sass",
+    "BEM",
+    "webapp"
+  ],
+  "author": "Fyodor Rychkov",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.1.0"
+  },
+  "dependencies": {
+    "webpack": "^3.1.0"
+  }
+}

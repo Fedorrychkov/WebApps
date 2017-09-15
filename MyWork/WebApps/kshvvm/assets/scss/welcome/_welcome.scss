@@ -1,0 +1,43 @@
+.welcome {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.4);  
+  }
+  
+  &__content {
+    padding: 40px 0;
+  }
+
+  &__title {
+    font-size: 3.9rem;
+    color: #fff;
+    max-width: 769px;
+  }
+
+  &__left {
+    position: relative;
+    z-index: 1;
+  }
+  
+  &__right {
+    width: 100%;
+    max-width: 427px;
+  }
+
+  &__left, &__right {
+    position: relative;
+    z-index: 1;
+  }
+}
+

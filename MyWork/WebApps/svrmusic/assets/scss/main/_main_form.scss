@@ -1,0 +1,60 @@
+.main_form {
+  max-width: 700px;
+  margin: 0 auto;
+  
+  &__title {
+    font-size: 2rem;
+    margin: 0 0 10px;
+  }
+  &__subtitle {
+    margin: 0 0 20px;
+    font-size: 1.2rem;
+  }
+
+  &__body {
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 32px;
+    padding: 5px;
+  }
+
+  input[type=email] {
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 100%;
+    width: 100%;
+    color: #222;
+    font-size: 1.6rem;
+    padding: 4px 0 0;
+  }
+
+  .input-field {
+    margin: 0 0 0 20px;
+    height: 50px;
+    width: 100%;
+  }
+  .input-field label {
+    top: 50%;
+    font-size: 1.4rem;
+    transform: translate(0, -50%);
+  }
+  input[type=email]:not(.browser-default).valid, input[type=email]:not(.browser-default):focus.valid {
+    border: none;
+    box-shadow: none;
+    color: #4CAF50;
+  }
+  input[type=email]:not(.browser-default).invalid, input[type=email]:not(.browser-default):focus.invalid {
+    border: none;
+    box-shadow: none;
+    color: #F44336;
+  }
+  input[type=email]:not(.browser-default).validate+label {
+
+  }
+  input[type=email]:not(.browser-default):focus:not([readonly]) {
+    border: none;
+    box-shadow: none;
+  }
+}
