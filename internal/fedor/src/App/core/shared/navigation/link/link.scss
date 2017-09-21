@@ -3,14 +3,14 @@
 .link {
     font-size: $font-xl;
     list-style: none;
-    margin: 0 20px;
+    margin: 0 $offset-md;
     &__item {
         text-decoration: none;
         color: $white;
         font-weight: 600;
         transition: $animation-fast;
         &:hover {
-            color: $color-blue-light;
+            color: $color-turq;
         }
     }
 }

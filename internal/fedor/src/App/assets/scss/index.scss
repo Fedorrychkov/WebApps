@@ -17,5 +17,12 @@ body {
   display: block;
 }
 
+.image {
+  width: 100%;
+}
 
-
+.content {
+  background-color: $white;
+  position: relative;
+  z-index: 1;
+}

@@ -3,11 +3,20 @@
 .lang {
     cursor: pointer;
     display: flex;
-    justify-content: space-between;
-    &__img {
-        padding: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 96px;
+    padding-left: $offset-lg;
+    margin-left: $offset-md;
+    border-left: 1px solid $color-gray;
+    &__items {
+        margin-left: $offset-sm;
+    }
+    &__item {
+        font-weight: bold;
+        font-size: $font-xl;
     }
     &:hover .lang__item {
-            color: $color-blue-light;
+        color: $color-turq;
     }
 }

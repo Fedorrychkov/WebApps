@@ -1,0 +1,65 @@
+@import '../../../assets/scss/_variables';
+
+.webform {
+    max-width: $screen-xs*2;
+    cursor: default;
+}
+
+.form_title {
+
+    & h2 {
+        color: $white;
+        font-weight: 600;
+        font-size: $offset-lg;
+    }
+    & .job {
+        display: block;
+        font-weight: 600;
+        font-size: $offset-xl;
+    }
+}
+
+.inputBox {
+    position: relative;
+    display: block;
+    margin: $offset-md 0;
+}
+
+.input {
+    width: 100%;
+    font-size: $offset-lg;
+    background: none;
+    border: none;
+    color: $white;
+    border-bottom: 2px solid $white;
+    box-sizing: border-box;
+    padding: $offset-md $offset-md;
+    display: block;
+    &_label {
+        color: $white;
+        font-weight: 600;
+        cursor: default;
+    }
+}
+
+.submitBox {
+    margin: $offset-lg 0 0;
+}
+
+.button {
+    font-size: $offset-lg;
+    padding: $offset-sm $offset-md;
+    box-sizing: border-box;
+    background: none;
+    border: 2px solid $white;
+    color: $white;
+    border-radius: $offset-sm;
+    cursor: pointer;
+    &:hover {
+        background-color: $color-turq;
+        border-color: $color-turq;
+    }
+    &-form {
+        
+    }
+}

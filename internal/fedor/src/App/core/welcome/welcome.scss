@@ -1,0 +1,60 @@
+@import '../../assets/scss/_variables';
+
+.welcome {
+    height: 800px;
+    position: relative;
+}
+
+.browser {
+    max-width: $screen-md;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: 1px 2px 10px $color-darker;
+    height: 700px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    &__panel {
+        border-radius: $offset-sm $offset-sm 0 0;
+        height: 50px;
+        background-color: $color-light;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__address {
+        margin: 0 $offset-lg;
+        width: 100%;
+        background-color: $color-lightest;
+        height: 30px;
+        border-radius: $offset-sm;
+    }
+}
+.panel {
+    &__controls {
+        margin-left: $offset-sm;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.control {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: $color-gray;
+    margin-left: $offset-sm;
+    &__close {
+        background-color: $color-red-light;
+    }
+    &__change {
+        background-color: $color-yellow;
+    }
+    &__tray {
+        background-color: $color-green;
+    }
+}
