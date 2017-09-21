@@ -29,6 +29,10 @@ export default class WebformComponent extends Component {
                 </div>
                 <div className="submitBox">
                     <button type="submit" className="button button-form">Request</button>
+                    <div className="agree">
+                        <input type="checkbox" name="checkbox" className="checkbox" />
+                        <span className="agree-text">I agree to the processing of my personal data</span>
+                    </div>
                 </div>    
             </form>
         );
