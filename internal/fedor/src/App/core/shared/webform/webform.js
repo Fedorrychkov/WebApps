@@ -20,11 +20,11 @@ export default class WebformComponent extends Component {
                     <h2>Hello, i'm <span className="job">Front<i>end</i> Developer</span></h2>
                 </div>
                 <div className="inputBox">
-                    <label className="input_label" for="name">Your Name</label>
-                    <input type="name" id="name" name="name" className="input" />
+                    <label className="input_label" htmlFor="name">Your Name</label>
+                    <input type="name" id="name" name="name" className="input" /> 
                 </div>
                 <div className="inputBox">
-                    <label className="input_label" for="name">Your Name</label>
+                    <label className="input_label" htmlFor="name">Your Name</label>
                     <input type="name" id="name" name="name" className="input" />
                 </div>
                 <div className="submitBox">
