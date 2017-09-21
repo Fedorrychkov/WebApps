@@ -17,7 +17,7 @@ export default class WebformComponent extends Component {
         return (
             <form className="webform" autoComplete="none">
                 <div className="form_title">
-                    <h2>Hello, i'm <span className="job">Frontend Developer</span></h2>
+                    <h2>Hello, i'm <span className="job">Front<i>end</i> Developer</span></h2>
                 </div>
                 <div className="inputBox">
                     <label className="input_label" for="name">Your Name</label>

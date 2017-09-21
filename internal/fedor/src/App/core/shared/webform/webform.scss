@@ -3,6 +3,7 @@
 .webform {
     max-width: $screen-xs*2;
     cursor: default;
+    z-index: 1;
 }
 
 .form_title {
@@ -16,6 +17,10 @@
         display: block;
         font-weight: 600;
         font-size: $offset-xl;
+        & i {
+            font-style: normal;
+            font-weight: 600;
+        }
     }
 }
 

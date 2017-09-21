@@ -10,6 +10,7 @@ export default class WelcomeComponent extends Component {
     render() {
         return (
             <div className="wrapper welcome">
+                <div></div>
                 <WebformComponent />
                 
                 <div className="browser">
