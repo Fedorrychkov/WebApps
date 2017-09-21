@@ -1,0 +1,9 @@
+@import '../../../assets/scss/_variables';
+
+.navigation {
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

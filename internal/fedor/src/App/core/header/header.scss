@@ -1,0 +1,29 @@
+@import '../../assets/scss/_variables';
+
+
+.header {
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $offset-md 0;
+}
+
+.logo {
+    cursor: pointer;
+    & h1 {
+        font-size: $font-gr;
+        transition: $animation-normal;
+        & span {
+            color: $color-turq;
+            font-weight: 600;
+        }
+        
+        &:hover {
+            color: $color-turq;
+            & span {
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@import '../../../assets/scss/_variables';
+
+.lang {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    &__img {
+        padding: 10px;
+    }
+    &:hover .lang__item {
+            color: $color-blue-light;
+    }
+}

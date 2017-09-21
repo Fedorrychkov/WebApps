@@ -1,0 +1,21 @@
+@import './mixins/_wrapper';
+@import './_variables';
+@import './_reset';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: $color-violet2;
+}
+
+.wrapper {
+  max-width: $screen-xl;
+  margin: 0 auto;
+  background-color: inherit;
+  position: relative;
+  display: block;
+}
+
+
+
