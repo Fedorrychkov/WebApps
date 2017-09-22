@@ -40,11 +40,29 @@
     box-sizing: border-box;
     padding: $offset-md $offset-md;
     display: block;
+    outline: none;
     &_label {
         color: $white;
-        font-weight: 600;
         cursor: default;
+        // font-weight: 300;
+        // font-size: $offset-lg;
+        // position: absolute;
+        // top: $offset-md;
+        // left: $offset-md;
     }
+}
+
+.select {
+    width: 100%;
+    font-size: $offset-lg;
+    background: none;
+    border: none;
+    color: $white;
+    border-bottom: 2px solid $white;
+    outline: none;
+    box-sizing: border-box;
+    padding: $offset-md $offset-md;
+    display: block;
 }
 
 .submitBox {
@@ -72,7 +90,20 @@
 }
 
 .checkbox {
+    margin: 0;
     margin-left: $offset-md;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: none;
+    }
 }
 
 .agree {

@@ -7,7 +7,7 @@ export default class WebformComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            agree: true
         }
         
         
@@ -26,6 +26,12 @@ export default class WebformComponent extends Component {
                 <div className="inputBox">
                     <label className="input_label" htmlFor="name">Your Name</label>
                     <input type="name" id="name" name="name" className="input" />
+                </div>
+                <div className="inputBox">
+                    <select className="select">
+                        <option>Freelance work</option>
+                        <option>Recent job</option>
+                    </select>
                 </div>
                 <div className="submitBox">
                     <button type="submit" className="button button-form">Request</button>
