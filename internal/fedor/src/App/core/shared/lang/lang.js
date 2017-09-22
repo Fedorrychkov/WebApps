@@ -7,10 +7,15 @@ export default class LangComponent extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            english: true
-        }
+        this.state = { english: false };
+    
         this.changeLang = this.changeLang.bind(this);
+    }
+    
+    componentDidMount() {
+        if(localStorage.getItem('enlang').length > 0) {
+            this.setState({ english: localStorage.getItem('enlang') }); // TODO: Fix bag. После релода слетает язык. En всегда после обновления.
+        }
     }
 
     changeLang() {

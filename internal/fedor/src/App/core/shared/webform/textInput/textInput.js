@@ -13,7 +13,7 @@ export default class InputComponent extends Component {
         return(        
             <div className="inputBox">
                 <label className="input_label" htmlFor={this.props.for}>{this.props.title} </label>
-                <input type={this.props.type} id={this.props.for} name={this.props.for} className="input" /> 
+                <input required type={this.props.type} id={this.props.for} name={this.props.for} className="input" /> 
             </div>
 
         );
