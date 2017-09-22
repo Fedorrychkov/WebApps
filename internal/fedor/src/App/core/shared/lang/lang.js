@@ -7,20 +7,17 @@ export default class LangComponent extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { english: false };
-    
+        this.state = { english: true };
         this.changeLang = this.changeLang.bind(this);
     }
     
     componentDidMount() {
-        if(localStorage.getItem('enlang').length > 0) {
-            this.setState({ english: localStorage.getItem('enlang') }); // TODO: Fix bag. После релода слетает язык. En всегда после обновления.
-        }
+        JSON.parse(localStorage.getItem('enlang')) !== null? this.setState({english: JSON.parse(localStorage.getItem('enlang')) }): this.setState({english: this.state.english});
     }
 
     changeLang() {
         this.setState({english: !this.state.english});
-        localStorage.setItem('enlang', this.state.english);
+        localStorage.setItem('enlang', !this.state.english);
     }
     
     render() {
@@ -30,8 +27,7 @@ export default class LangComponent extends Component {
                     <img src={globe} alt="globe"/>
                 </div>
                 <div className="lang__items">
-                    <div className="lang__item" style={{display: (this.state.english? 'block':'none')}}>En</div>
-                    <div className="lang__item" style={{display: (this.state.english? 'none':'block')}}>Рус</div>
+                    <div className="lang__item">{(this.state.english? 'En':'Рус')}</div>
                 </div>
             </div>
         );
