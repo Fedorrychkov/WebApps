@@ -1,5 +1,30 @@
 @import '../../../../assets/scss/_variables';
 
+
+.inputBox {
+    position: relative;
+    display: block;
+    margin: $offset-md 0;
+}
+
 .input {
-    
+    width: 100%;
+    font-size: $offset-lg;
+    background: none;
+    border: none;
+    color: $white;
+    border-bottom: 2px solid $white;
+    box-sizing: border-box;
+    padding: $offset-md $offset-md;
+    display: block;
+    outline: none;
+    &_label {
+        color: $white;
+        cursor: default;
+        // font-weight: 300;
+        // font-size: $offset-lg;
+        // position: absolute;
+        // top: $offset-md;
+        // left: $offset-md;
+    }
 }
