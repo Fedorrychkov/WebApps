@@ -11,10 +11,10 @@ export default class InputComponent extends Component {
 
     render() {
         return(        
-            <div className="inputBox">
-                <label className="input_label" htmlFor={this.props.for}>{this.props.title} </label>
+            <label className="inputBox" htmlFor={this.props.for}>
+                <span className="input_label">{this.props.title}</span>
                 <input required type={this.props.type} id={this.props.for} name={this.props.for} className="input" /> 
-            </div>
+            </label>
 
         );
     }
