@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 import './webform.scss';
 
+import InputComponent from './textInput/textInput';
+
 export default class WebformComponent extends Component {
 
     constructor(props) {
@@ -19,14 +21,7 @@ export default class WebformComponent extends Component {
                 <div className="form_title">
                     <h2>Hello, i'm <span className="job">Front<i>end</i> Developer</span></h2>
                 </div>
-                <div className="inputBox">
-                    <label className="input_label" htmlFor="name">Your Name</label>
-                    <input type="name" id="name" name="name" className="input" /> 
-                </div>
-                <div className="inputBox">
-                    <label className="input_label" htmlFor="name">Your Name</label>
-                    <input type="name" id="name" name="name" className="input" />
-                </div>
+                <InputComponent type="text" for="name" title="Your Name"/>
                 <div className="inputBox">
                     <select className="select">
                         <option>Freelance work</option>
