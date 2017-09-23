@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import './webform.scss';
 
 import InputComponent from './textInput/textInput';
+import AgreeComponent from './agreeCheckbox/agree';
 
 export default class WebformComponent extends Component {
 
@@ -31,10 +32,7 @@ export default class WebformComponent extends Component {
                 </div>
                 <div className="submitBox">
                     <button type="submit" className="button button-form">Request</button>
-                    <label className="agree">
-                        <input type="checkbox" name="checkbox" className="checkbox" />
-                        <span className="agree-text">I agree to the processing of my personal data</span>
-                    </label>
+                    <AgreeComponent />
                 </div>    
             </form>
         );
