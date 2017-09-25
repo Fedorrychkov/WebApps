@@ -1,0 +1,134 @@
+.amplifire_page {
+    &__inner {
+        @include flex_container(space-between, flex-start, wrap);
+        margin: $offset-md 0 $offset-lg;
+    }
+    &__title {
+        line-height: 1;
+        margin: 0 0 $offset-md;
+    }
+    &__item {
+        width: 50%;
+        display: inline-block;
+        margin: $offset-lg 0;
+    }
+    &__gallery {
+    }
+    &__img {
+        width: 100%;
+        display: block;
+        margin: 0 0 $offset-sm;
+    }
+    &__photos {
+        @include flex_container(flex-start, flex-start, wrap);
+        & .material-placeholder {
+            width: 19%;
+            margin: $offset-xs 1% $offset-xs 0;
+            display: inline-block;
+            height: 85px;
+            overflow: hidden;
+            @include transition($animation-slow);
+        }
+        & img {
+            width: 100%;
+        }
+    }
+    &__content {
+        padding-left: $offset-lg;
+        & h1, & h2, & h3, & h4, & h5, & h6 {
+            margin: $offset-md 0;
+        }
+        & h6 {
+            font-size: 1.3rem;
+        }
+        & p {
+            line-height: 1.2;
+            margin-left: $offset-sm;
+        }
+    }
+    &__cost {
+        font-size: 1.9rem;
+        font-weight: 600;
+        display: block;
+        margin: $offset-lg 0 0;
+        text-align: right;
+        &_span {
+            font-weight: 300;
+        }
+        &_wrap {
+            @include flex_container(space-between, center, nowrap);
+        }
+    }
+    &__button {
+        padding: $offset-sm;
+        max-width: 210px;
+        width: 100%;
+        min-width: 100px;
+        background-color: $white;
+        position: relative;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 1100px) {
+    .amplifire_page {
+        &__item {
+            width: 100%;
+            display: inline-block;
+            margin: $offset-lg 0;   
+        }
+        &__gallery {
+            display: block;
+            margin: $offset-md auto;
+        }
+        &__content {
+            padding-left: 0;
+        }
+        &__photos {
+            & .material-placeholder {
+                height: 135px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .amplifire_page {
+        &__photos {
+            & .material-placeholder {
+                height: 85px;
+            }
+        }
+    }
+}
+
+@media (max-width: 685px) {
+    .amplifire_page {
+        &__photos {
+            & .material-placeholder {
+                height: 60px;
+            }
+        }
+    }
+}
+
+@media (max-width: 510px) {
+    .amplifire_page {
+        &__photos {
+            & .material-placeholder {
+                height: 40px;
+            }
+        }
+        &__cost {
+            &_wrap {
+                text-align: left;
+                display: block;
+                margin: 0 auto;
+                & * {
+                    margin: $offset-xs 0;
+                }
+            }
+        }
+    }
+}
+

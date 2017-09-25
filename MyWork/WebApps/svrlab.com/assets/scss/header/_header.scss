@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  padding: $offset-md 0 $offset-lg;
+  &__item {
+    display: inline-block;
+  }
+  &__items {
+    @include flex_container(space-between, center, nowrap);
+  }
+
+  &__button {
+    margin: $offset-sm 0 0;
+    width: 165px;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  .header {
+    &__items {
+      display: block;
+    }
+    &__item {
+      display: block;
+      margin: 0 0 $offset-md;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.welcome_menu {
+  display: block;
+  margin: $offset-md 0 0;
+  &__item {
+    display: inline-block;
+    padding: 0 $offset-sm 0 0;
+  }
+  &__link {
+    color: $color-darker;
+    @include transition($animation-normal);
+    &:hover {
+      color: $color-dark;
+      @include transition($animation-normal);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.about {
+    &__title {
+        font-size: 1.8rem;
+        margin: 0 0 $offset-sm;
+    }
+    &__list {
+        margin: $offset-sm 0 $offset-sm $offset-sm;
+        display: inline-block;
+        line-height: 1.2;
+        &_item {
+            margin: $offset-xs 0 $offset-sm
+        }
+    }
+    &__p {
+
+    }
+    &__slogan {
+        margin: $offset-sm 0;
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+    &__author {
+        font-size: 1.2rem;
+    }
+}

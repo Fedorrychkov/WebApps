@@ -1,0 +1,15 @@
+.header_contact {
+  margin: $offset-xs 0 0;
+  &__phone {
+    font-size: $font-lg;
+    position: relative;
+    padding-left: $font-lg*1.5;
+    display: block;
+  }
+
+  & i {
+    position: absolute;
+    left: 0;
+    top: 1px;
+  }
+}

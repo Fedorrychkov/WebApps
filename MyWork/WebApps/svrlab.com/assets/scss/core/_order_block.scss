@@ -1,0 +1,12 @@
+.order_block {
+    border-top: 1px solid $color-lighter;
+    margin: $offset-md 0 0;
+    padding: $offset-md 0;
+    line-height: 1.2;
+    &__title {
+
+    }
+    &__content {
+        margin: $offset-md 0;
+    }
+}

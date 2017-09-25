@@ -1,0 +1,11 @@
+.error_page {
+    margin: 100px 0 190px;
+    text-align: center;
+    &__title {
+        font-size: 7rem;
+        margin: $offset-lg 0;
+    }
+    &__sub {
+        margin: $offset-lg 0;
+    }
+}

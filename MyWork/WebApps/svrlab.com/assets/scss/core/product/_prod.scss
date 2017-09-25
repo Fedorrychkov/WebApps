@@ -1,0 +1,108 @@
+.prod {
+  overflow: hidden;
+  &__item {
+    height: 400px;
+    width: 30%;
+    position: relative;
+    background-color: #eaeaea;
+    z-index: 10;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0 $offset-lg;
+    &:hover {
+      z-index: 999;
+    }
+    &:hover .prod__info_box {
+      transform: translate3d(0, 0, 0);
+      @include transition($animation-normal);
+    }
+    &:hover .prod__info_title {
+      transform: translate3d(0, -200%, 0);
+      @include transition($animation-normal);
+    }
+    &:hover .prod__button {
+      transform: translate3d(0, 0, 0);
+      @include transition($animation-normal);
+      opacity: 1;
+    }
+    &:hover .prod__info_animbox {
+      transform: translate3d(0, 200%, 0);
+      @include transition($animation-normal);
+      opacity: 0; 
+    }
+
+    &:hover .prod__image::after {
+      background-color: rgba(0,0,0,0.2);
+      @include transition($animation-normal);
+    }
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    background-color: $color-dark;
+    background-size: cover;
+    background-position: center;
+    &:hover {
+      box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    }
+    &::after {
+      content: "";
+      @include posAbsolute();
+      background-color: rgba(0,0,0,0.5);
+      z-index: 1;
+      @include transition($animation-normal);
+    }
+  }
+
+  &__info {
+    &_title {
+      transform: translate3d(0, 0, 0);
+      @include transition($animation-normal);
+    }
+
+    &_text {
+      padding: $offset-md 0;
+    }
+
+    &_options {
+      & p {
+        border-bottom: 1px solid $color-dark;
+      }
+    }
+
+    &_price {
+      text-align: right;
+      padding: $offset-md 0 0;  
+    }
+    &_animbox {
+      color: $white;
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      @include transition($animation-normal);
+    }
+  }
+
+  &__info_box {
+    @include posAbsolute();
+    padding: $offset-md;
+    color: $white;
+    z-index: 2;
+    transform: translate3d(0, 0, 0);
+    @include transition($animation-normal);
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+    text-align: center;
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    @include transition($animation-normal);
+  }
+
+}

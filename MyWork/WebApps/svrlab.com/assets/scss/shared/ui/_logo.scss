@@ -1,0 +1,21 @@
+.logo {
+  position: relative;
+  display: inline-block;
+  &__main {
+    font-size: $font-xxl*1.4;
+    line-height: 1;
+  }
+
+  &__sub {
+    position: absolute;
+    left: 50%;
+    bottom: -11px;
+    color: $white;
+    background-color: $color-dark;
+    width: 100%;
+    text-align: center;
+    transform: translate3d(-50%, 0, 0);
+    font-size: $font-sm;
+    text-transform: uppercase;
+  }
+}

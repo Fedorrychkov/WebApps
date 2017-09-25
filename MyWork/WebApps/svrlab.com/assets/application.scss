@@ -1,0 +1,112 @@
+@import './scss/variables';
+@import './scss/mixins';
+
+@import './scss/shared/flex_co';
+@import './scss/shared/title';
+@import './scss/shared/button';
+@import './scss/shared/breadcrumbs';
+@import './scss/shared/animations';
+@import './scss/shared/socials';
+@import './scss/shared/offset';
+
+@import './scss/header/header';
+@import './scss/header/header_contact';
+@import './scss/header/nav';
+
+@import './scss/main/main';
+
+@import './scss/core/welcome/welcome';
+@import './scss/core/welcome/welcome_menu';
+
+@import './scss/core/product/product';
+@import './scss/core/product/prod';
+@import './scss/core/single-product/single_product';
+@import './scss/core/amplifire/amplifires';
+@import './scss/core/amplifire/amplifire';
+@import './scss/core/amplifire/amplifire_page';
+@import './scss/core/about/about';
+@import './scss/core/order_block';
+@import './scss/core/error_page';
+
+@import './scss/footer/footer';
+
+@import './scss/shared/ui/logo';
+@import './scss/shared/popup_form';
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased
+}
+
+body {
+  font-size: 18px;
+  background-color: $white;
+  color: $color_dark;
+}
+
+a {
+  font-size: 1rem;
+  color: $color-dark;
+  text-decoration: none;
+}
+
+i {
+  color: $color-dark;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.page-wrapper {
+  max-width: $screen-lg;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  clear: both;
+}
+
+.wrapper {
+  max-width: $screen-lg;
+  width: 100%;
+}
+
+.overflow-visible {
+  overflow: visible !important;
+  @include transition($animation-slow);
+}
+
+
+.arrowto {
+  &__top {
+    color: $color-gray;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 3.5rem;
+    z-index: 11;
+    cursor: pointer;
+    @include transition($animation-normal);
+    &:hover {
+      color: $color-blue;
+      @include transition($animation-normal);
+    }
+  }
+}
+
+
+@media (max-width: $screen-lg) {
+  .page-wrapper, .wrapper {
+    max-width: 1080px;
+    padding: 0 $offset-lg;
+  }
+}

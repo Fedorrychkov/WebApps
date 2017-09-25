@@ -1,0 +1,38 @@
+.single_product {
+  display: block;
+  width: 100%;
+  position: relative;
+
+  &__inner {
+    padding: $offset-md 0;
+  }
+
+  &__title {
+  }
+  
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    position: relative;
+  }
+
+  &__image {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  &__content {
+    padding: 40px 0 0;
+    align-items: flex-start;
+  }
+
+  &__table {
+
+    td,th {
+      cursor: default;
+      padding: $offset-sm;
+    }
+  }
+}

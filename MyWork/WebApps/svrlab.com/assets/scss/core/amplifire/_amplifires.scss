@@ -1,0 +1,35 @@
+.amplifires {
+    &__inner {
+        margin: $offset-md 0 $offset-md;
+    }
+    &__title {
+        margin: 0 0 $offset-lg*2;
+        line-height: 1;
+    }
+    &__items {
+        @include flex_container(space-between, flex-start, wrap);
+    }
+    &__not_found {
+        display: block;
+        margin: $offset-lg 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .amplifires {
+        &__items {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .amplifires {
+        &__not_found {
+            font-size: 1.6rem;
+        }
+    }
+}

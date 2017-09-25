@@ -1,0 +1,32 @@
+.welcome {
+  background-color: $color-lighter;
+  height: 400px;
+  background-size: cover;
+  background-position: top;
+  margin: 0 0 $offset-lg;
+  &__inner {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  &__subtitle {
+    font-size: 2rem;
+    margin-left: -2px;
+  }
+  &__content {
+    padding-top: 40px;
+    /*position: absolute;
+    top: 30%;
+    left: 0;
+    transform: translate3d(0, -50%, 0);
+    right: 0;*/
+    width: 100%;
+  }
+  &__buttons {
+    margin: $offset-md 0 0;
+  }
+  &__button {
+    margin-bottom: $offset-md;
+  }
+}

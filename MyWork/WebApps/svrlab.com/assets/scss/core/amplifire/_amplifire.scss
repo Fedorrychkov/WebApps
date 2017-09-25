@@ -1,0 +1,104 @@
+.amplifire {
+    width: 48%;
+    margin: 0 0 $offset-lg;
+    display: inline-block;
+    background-color: $white;
+    height: 250px;
+    @include flex_container(space-between, flex-start, nowrap);
+    cursor: default;
+    &:hover &__image_img {
+        opacity: 1;
+    }
+    &:hover &__image_img::after {
+        background-color: rgba(0, 0, 0, .1);
+    }
+    &__image {
+        width: 50%;
+        height: 100%;
+        &_img {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            position: relative;
+            &::after {
+                content: "";
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                position: absolute;
+                background-color: rgba(0, 0, 0,.4);
+                @include transition($animation-slow);
+            }
+        }
+    }
+    &__meta {
+        position: absolute;
+        top: $offset-sm;
+        left: 0;
+        padding: $offset-sm $offset-lg;
+        color: $white;
+        background-color: $color-blue;
+        z-index: 1;
+    }
+    &__link {
+        &_wrap {
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            position: relative;
+        }
+    }
+    &__content {
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+        padding-left: $offset-md;
+    }
+    &__title {
+        font-size: 1.75rem;
+        margin: $offset-sm 0 0;
+    }
+    &__text {
+        line-height: 1.2;
+        margin: $offset-md 0;
+    }
+    &__button {
+        padding: $offset-sm;
+        max-width: 145px;
+        width: 100%;
+        min-width: 100px;
+        margin-top: $offset-sm;
+        position: relative;
+        display: inline-block;
+    }
+    &__price {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .amplifire {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .amplifire {
+        display: block;
+        height: auto;
+        &__image, &__content {
+            width: 100%;
+        }
+        &__image {
+            height: 200px;
+        }
+        &__content {
+            padding-left: 0;
+            padding-top: $offset-sm;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.breadcrumbs {
+    margin: $offset-md 0;
+    width: 100%;
+    border-bottom: 1px solid $color-lighter;
+    &__back {
+        display: inline-block;
+        vertical-align: middle;
+        color: $color-blue;
+        &:hover {
+            color: $color-blue-light;
+        }
+    }
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__icon {
+        font-size: 1.2rem;
+        line-height: 1;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__text {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,16 @@
+.footer {
+  background-color: $layout-dark;
+  &__inner {
+    padding: $offset-md 0;
+    @include flex_container(space-between, flex-start, wrap);
+  }
+  &__item {
+    width: 50%;
+    display: inline-block;
+  }
+  &__copyright {
+    width: 100%;
+    padding: $offset-lg 0;
+    text-align: center;
+  }
+}
