@@ -11,4 +11,4 @@
 [Сайт компании svrlab.com. Wordpress Theme](https://github.com/Fedorrychkov/WebApps/tree/master/MyWork/WebApps/svrlab-wordpress) <br>
 [Сайт компании Aria - Дом счастливых невест. Wordpress Theme](https://github.com/Fedorrychkov/WebApps/tree/master/MyWork/WebApps/aria-wordpress) <br>
 
-### Little CV (Alpha version)[https://github.com/Fedorrychkov/WebApps/tree/master/CV/]
+### [Little CV (Alpha version)](https://github.com/Fedorrychkov/WebApps/tree/master/CV/)
