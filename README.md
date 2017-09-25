@@ -3,7 +3,7 @@
 #### [fedorrychkov.com](https://fedorrychkov.com/)
 #### machine learning [project](https://github.com/Fedorrychkov/EmotionRecognition)
 
-[New Fedorrychkov.com with React.js](https://github.com/Fedorrychkov/WebApps/tree/master/internal/fedor/) ![new fedorrychkov.com](fbg.png)
+[New Fedorrychkov.com with React.js](https://github.com/Fedorrychkov/WebApps/tree/master/internal/fedor/) ![new fedorrychkov.com](fbg-new.png)
 
 ## Some projects
 [Веб интерфейс для кассиров. Angular 4](https://github.com/Fedorrychkov/WebApps/tree/master/MyWork/WebApps/game-cashier-web-ng) <br>
