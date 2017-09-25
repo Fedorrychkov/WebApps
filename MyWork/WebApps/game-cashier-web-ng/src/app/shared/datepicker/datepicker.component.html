@@ -1,0 +1,23 @@
+<div class="datapicker">
+    <div class="form-control">
+        <input #datarange class="form-input">
+    </div>
+    <div class="datepicker_controls">
+        <button class="" (click)="prevMonth()">
+            <
+        </button>
+
+        <div class="datepicker_month_year">
+            <button class="">
+                 <span class="btn_label">{{currentDate}}</span>  
+            </button>
+            <button class="">
+                 <span class="btn_label">{{currentDate}}</span>  
+            </button>
+        </div>
+
+        <button class="" (click)="nextMonth()">
+            >
+        </button>
+    </div>
+</div>

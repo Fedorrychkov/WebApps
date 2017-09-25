@@ -1,0 +1,32 @@
+@import '../../../assets/styles/_variables';
+@import '../../../assets/styles/_mixins';
+
+:host {
+    box-sizing: border-box;
+    width: $screen-sm;
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: $offset-lg auto;
+}
+
+.form_head {
+    font-size: $font-size-sm;
+    color: $gray-color;
+}
+
+.form-help {
+    text-align: left;
+    display: inline-block;
+}
+
+.form_action {
+    margin: $offset-md 0 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

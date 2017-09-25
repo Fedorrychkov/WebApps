@@ -1,0 +1,27 @@
+@import '../../../assets/styles/_variables';
+@import '../../../assets/styles/_mixins';
+
+:host {
+    display: inline-block;
+    margin: $offset-sm $offset-md $offset-mc auto;
+    background-color: $darker-color;
+    width: 44%;
+    max-width: 320px;
+}
+
+.card {    
+    padding: $offset-sm;
+}
+
+.caption {
+    margin-bottom: $offset-xs;
+    font-size: $font-size-xs;
+    font-weight: 100;
+    color: $smoke-color;
+}
+
+.value {
+    font-size: $font-size-md;
+    color: #fff;
+    font-weight: 300;
+}

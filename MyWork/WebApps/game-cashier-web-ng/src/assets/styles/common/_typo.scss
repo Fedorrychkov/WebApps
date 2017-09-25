@@ -1,0 +1,102 @@
+@import './_variables';
+@import './_mixins';
+
+sub, sup, small {
+    font-size: $font-mc;
+    text-transform: uppercase;
+}
+h1, h2, h3 {
+    font-weight: 400;
+}
+h1 {
+    font-size: $font-gr;
+}
+h2 {
+    font-size: $font-xl;
+}
+h3 {
+    font-size: font-lg;
+}
+h4, h5 {
+    text-transform: uppercase;
+    font-size: font-md;
+}
+
+.lead {
+    font-size: $font-lg;
+    small {
+        font-size: $font-xs;
+    }
+}
+.text__white {
+    color: $white
+}
+.text__light {
+    color: $light
+}
+.text__gray {
+    color: $gray
+}
+.text__dark {
+    color: $dark;
+}
+.text__primary {
+    color: $primary;
+}
+.text__success {
+    color: $success;
+}
+.text__warning {
+    color: $warning;
+}
+.text__danger {
+    color: $danger;
+}
+.text__accent {
+    color: $accent;
+}
+.text__aslink {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.badge {
+    padding: $offset-xs $offset-sm;
+    vertical-align: top;
+    font-size: $font-xs;
+    border-radius: $radius-lg;
+    font-weight: 300;
+    display: inline-block;
+    &__white {
+        @include badge($white);
+    }
+    &__light {
+        @include badge($light);
+    }
+    &__gray {
+        @include badge($gray);
+    }
+    &__dark {
+        @include badge($dark);
+    }
+    &__primary {
+        @include badge($primary);
+    }
+    &__success {
+        @include badge($success);
+    }
+    &__warning {
+        @include badge($warning);
+    }
+    &__danger {
+        @include badge($danger);
+    }
+    &__accent {
+        @include badge($accent);
+    }
+}
+@each $name, $color in $colors {
+    .text__#{$name} {
+        color: $color;
+    }
+}

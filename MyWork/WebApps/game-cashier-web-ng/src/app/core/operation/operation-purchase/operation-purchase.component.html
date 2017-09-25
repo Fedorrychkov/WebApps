@@ -1,0 +1,41 @@
+<form novalidate class="form_content"
+      [formGroup]="operationForm"
+      (submit)="submit(operationForm.value)">
+  <h2 class="form_head">
+    Введите сумму
+  </h2>
+  <div class="form-control invoice">
+    <span class="form-label">номер чека:</span>
+    <input  class="form-input"
+            type="text"
+            autofocus
+            formControlName="invoiceNumber"
+            autocomplete="off">
+    
+  </div>
+  <div class="form-control price">
+    <span class="form-label">Общая сумма к оплате:</span>
+    <input  class="form-input"
+            type="number"
+            step="0.1"
+            autofocus
+            formControlName="cash"
+            autocomplete="off"
+            [(ngModel)]="cash">
+    
+  </div>
+  <div class="form-control discount" [class.disabled]="isPhone">
+    <input  class="form-input"
+            type="text"
+            autofocus
+            formControlName="discountRate"
+            autocomplete="off">
+    
+  </div>
+<p>
+  Totals: {{cash}}
+</p>
+  <div class="form_action">
+    <button class="btn btn-primary">Готово</button>
+  </div>
+</form>

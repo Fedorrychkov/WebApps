@@ -1,0 +1,16 @@
+<ul>
+  <li *ngFor="let item of navlinks">
+    <!-- <ng-container>
+        <app-icon></app-icon>
+    </ng-container> -->
+    <ng-container *ngIf="item.type === 'leftbar'">
+        <a [routerLink]="item.link"
+            routerLinkActive="navbar_link__active"
+            class='navbar_link'>
+            <icon name="{{ item.icon }}">
+            </icon>
+            <span class="navbar_link-title">{{ item.title }}</span>
+        </a>
+    </ng-container>
+  </li>
+</ul>

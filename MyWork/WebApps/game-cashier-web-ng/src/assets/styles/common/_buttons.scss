@@ -1,0 +1,58 @@
+$state: default, primary, success, warning, danger;
+.btn {
+    margin: auto;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    max-width: $screen-sm;
+    background-image: none;
+    background-color: transparent;
+    border-radius: 0;
+    border: 2px solid;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s;
+}
+.btn {
+    &, &-default {
+        @include button($gray-color, #fff);
+    }
+    &-primary {
+        @include button($blue-color, #fff);
+    }
+    &-success {
+        @include button($green-color, #fff);
+    }
+    &-warning {
+        @include button($orange-color, #fff);
+    }
+    &-danger  {
+        @include button($red-color, #fff);
+    }
+    &[disabled],
+    &.disabled {
+        @include button($lighter-color, $lighter-color);
+        pointer-events: none;
+        &, &:hover, &:focus {
+            background-color: transparent;
+        }
+    }
+}
+
+@media (min-width: $screen-sm) {
+    .btn {
+        padding: $offset-sm;
+        letter-spacing: .5px;
+        font-size: $font-size-sm;
+        font-weight: 300;
+    }
+}
+@media (min-width: $screen-md) {
+    .btn {
+        padding: $offset-md;
+        letter-spacing: 1px;
+        font-size: $font-size-md;
+        font-weight: 100;
+    }
+}

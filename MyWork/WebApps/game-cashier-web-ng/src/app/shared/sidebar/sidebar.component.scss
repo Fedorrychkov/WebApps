@@ -1,0 +1,14 @@
+@import '../../../assets/styles/_variables';
+@import '../../../assets/styles/_mixins';
+
+:host {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  background-color: $smoke-color;
+  display: block;
+  height: 100%;
+  width: $navbar-width;
+  box-shadow: 1px 0 0 $lightest-color;
+}

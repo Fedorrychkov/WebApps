@@ -1,0 +1,16 @@
+<app-preloader *ngIf="!loaded"></app-preloader>
+
+<div class="code">
+  <h1>Присоединяйтесь к нам!!</h1>
+  <div class="code-label">
+    <div class="label">отсканируйте QR-код</div>
+    <div class="value"> <img src="{{ qrCode }}"></div>
+  </div>
+  <div class="separator">
+    <span>или</span>
+  </div>
+  <div class="text-label">
+    <div class="label">введите код вручную</div>
+    <div class="value">{{ promoCode }}</div>
+  </div>
+</div>

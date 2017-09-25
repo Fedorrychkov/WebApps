@@ -1,0 +1,43 @@
+@function set-color($color) {
+    @if (lightness($color) > 60) {
+        @return $color-darker;
+    }
+    @else {
+        @return $color-white;
+    }
+}
+@function set-weight($color) {
+    @if (lightness($color) > 60) {
+        @return 400;
+    }
+    @else {
+        @return 300;
+    }
+}
+
+@mixin button($color) {
+    background-color: $color;
+    border-color: $color;
+    color: set-color($color);
+    font-weight: set-weight($color);
+    transition: all $animation-normal;
+    svg {
+        fill: set-color($color);
+    }
+    &.btn__outline {
+        background-color: transparent;
+        border-width: 2px;
+        color: $color;
+        svg {
+            fill: $color;
+        }
+    }
+    &.btn__link {
+        background-color: transparent;
+        border: 0;
+        color: $color;
+        svg {
+            fill: $color;
+        }
+    }
+}

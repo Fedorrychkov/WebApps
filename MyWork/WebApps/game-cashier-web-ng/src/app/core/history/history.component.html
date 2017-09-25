@@ -1,0 +1,160 @@
+<app-preloader *ngIf="!loaded"></app-preloader>
+
+<app-datepicker></app-datepicker> 
+
+<app-history-totals></app-history-totals>
+
+<div>
+  <table class="table table__striped history"
+             infiniteScroll
+             [infiniteScrollDistance]="2"
+             [infiniteScrollContainer]="'.content'"
+             [scrollWindow]="false"
+             (scrolled)="getHistory()">
+    <thead class="table_head">
+      <tr>
+        <th class="table_colname">
+          Дата
+        </th>
+        <th class="table_colname">
+          Клиент
+        </th>
+        <th class="table_colname">
+          Номер чека
+        </th>
+        <th class="table_colname">
+          Счет (rub / баллы)
+        </th>
+        <th class="table_colname">
+          Скидка (rub / баллы)
+        </th>
+        <th class="table_colname">
+          Оплата (rub / баллы)
+        </th>
+        <th class="table_colname">
+          Операция
+        </th>
+      </tr>
+    </thead>
+    <tbody class="table_body">
+      <tr class="table_item"
+        *ngFor="let history of historyes">
+        
+        <td class="table_col dateCreated">
+          <div class="capture">
+            Дата
+          </div>
+          <div class="value">
+            <div>{{ history.dateCreated | date:"dd-MM-yyyy" }}</div>
+            <div>{{ history.dateCreated | date:"H:mm:ss" }}</div>
+          </div>
+          
+        </td>
+        <td class="table_col client">
+          <div class="capture">
+            Клиент
+          </div>
+          <div class="value">
+            {{ history.customer.name }} {{ history.customer.surname }}
+          </div>
+        </td>
+        <td class="table_col invoiceNumber">
+          <div class="capture" *ngIf="history.invoiceNumber">
+            Номер чека
+          </div>
+          <div class="value">
+            {{ history.invoiceNumber }}
+          </div>
+        </td>
+        <td class="table_col total">
+          <div class="capture">
+            Счет (rub / баллы)
+          </div>
+          <div class="value">
+            {{ history.total | number:'.2' }} / 0
+          </div>
+        </td>
+        <td class="table_col discountRate skidka">
+          <div class="capture">
+            Скидка (rub / баллы)
+          </div>
+          <div class="value">
+            <span 
+              *ngIf="history.scoresDelta || (history.action == 'PRICE_LIST_PURCHASE'); else">
+              {{ history.discountRate * history.total / 100 | number:'.2' }} / 0
+            </span>
+            <span>0 / 0</span>
+          </div>
+
+        </td>
+        <td class="table_col cash">
+          <div class="capture">
+            Оплата (rub / баллы)
+          </div>
+          <div class="value">
+            {{ history.cash | number:'.2' }} / {{ history.scoresDelta }}
+          </div>
+        </td>
+        <td class="table_col operations">
+          <div class="capture">
+            Операция
+          </div>
+          <div class="value">
+            <span *ngIf="history.action == 'PURCHASE'">Базовая операция</span>
+            <span *ngIf="history.action == 'COUPON_ORDER'">Операция с купонами</span>
+            <span *ngIf="history.action == 'OFFER'">Операция по акции</span>
+            <span *ngIf="history.action == 'PRICE_LIST_PURCHASE'">Операция по прейскуранту</span>
+          </div>
+        </td>
+        
+          <!-- <div class="history_nav" *ngIf="history.action == 'PRICE_LIST_PURCHASE'">
+            <td class="table_col">
+              <div class="capture">
+                Наименование
+              </div>
+              <div class="value">
+                Price item 12
+              </div>
+            </td>
+            <td class="table_col">
+              <div class="capture">
+                Количество
+              </div>
+              <div class="value">
+                1
+              </div>
+            </td>
+            <td class="table_col">
+              <div class="capture">
+                Счет (rub / баллы)
+              </div>
+              <div class="value">
+                <span>15.00 / 0</span>
+              </div>
+            </td>
+            <td class="table_col">
+              <div class="capture">
+                Скидка (rub / баллы)
+              </div>
+              <div class="value">
+                <span>3.00 / 0</span>
+              </div>
+            </td>
+            <td class="table_col">
+              <div class="capture">
+                Оплата (rub / баллы)
+              </div>
+              <div class="value">
+                <span>12.00 / 0</span>
+              </div>
+            </td>
+          </div> -->
+
+      </tr>
+  </tbody>
+  </table> 
+  
+  <div class="loading" *ngIf="loading">
+    Загружаем...
+  </div>
+</div>

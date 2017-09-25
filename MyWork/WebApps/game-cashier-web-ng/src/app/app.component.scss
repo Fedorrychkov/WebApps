@@ -1,0 +1,40 @@
+@import '../assets/styles/_variables';
+
+:host {
+    box-sizing: border-box;
+    background-color: $smoke-color;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.main {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.content {
+    box-sizing: border-box;
+    width: auto;
+    display: block;
+    height: 100%;
+    overflow: auto;
+}
+
+@media (min-width:320px) {
+    .content {
+        margin-left: 0;
+    }
+}
+
+@media (min-width:540px) {}
+
+@media (min-width:998px) {
+    .content {
+        margin-left: $navbar-width;
+    }
+}
+
+@media (min-width:1200px) {}
+
+@media (min-width:1440px) {}

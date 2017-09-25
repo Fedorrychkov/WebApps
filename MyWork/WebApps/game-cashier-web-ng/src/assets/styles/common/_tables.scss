@@ -1,0 +1,21 @@
+.table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+    & td {
+        font-weight: 300;
+        font-size: $font-size-xs;
+        margin: 0 $offset-md;
+    }
+    
+    & td, & th {
+        max-width: 100px;
+        vertical-align: top;
+        border-bottom: 2px solid $lighter-color;
+    }
+    
+    & tr {
+        position: relative;
+    }
+}

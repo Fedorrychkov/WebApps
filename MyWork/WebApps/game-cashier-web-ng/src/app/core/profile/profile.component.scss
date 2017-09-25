@@ -1,0 +1,24 @@
+@import '../../../assets/styles/_variables';
+@import '../../../assets/styles/_mixins';
+
+:host {
+  margin: auto;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: $screen-md;
+  position: relative;
+  & > div {
+    padding: 24px 12px;
+    border-bottom: 1px dotted #8f9ba9;
+  }
+}
+.caption {
+  font-size: $font-size-xs;
+  font-weight: 100;
+}
+.value {
+  font-size: $font-size-md;
+  margin-top: 12px;
+  font-weight: 100;
+}

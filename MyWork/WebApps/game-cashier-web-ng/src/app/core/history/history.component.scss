@@ -1,0 +1,37 @@
+@import '../../../assets/styles/_variables';
+@import '../../../assets/styles/_mixins';
+
+:host {
+    display: block;
+    box-sizing: border-box;
+    padding: $offset-xl;
+    position: relative;
+}
+.table_head {
+    display: none;
+}
+
+.table_col {
+    padding: $offset-xs 0;
+}
+
+.capture {
+    font-size: $font-size-mc;
+    color: $orange-color;
+    margin: 0 0 4px;
+}
+
+.value {
+
+}
+
+.history_nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.loading {
+    text-align: center;
+    padding: $offset-md 0;
+}

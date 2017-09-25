@@ -1,0 +1,7 @@
+@import '../../../../assets/styles/_variables';
+@import '../../../../assets/styles/_mixins';
+
+:host {
+    margin: $offset-md 0;
+    display: block;
+}

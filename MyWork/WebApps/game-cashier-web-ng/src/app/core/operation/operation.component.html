@@ -1,0 +1,31 @@
+<form novalidate class="form_content"
+      [formGroup]="operationForm"
+      (submit)="submit(operationForm.value)">
+  <h2 class="form_head">
+    Введите QR-код или номер телефона
+  </h2>
+  <div class="form-control">
+    <input  class="form-input"
+            type="text"
+            autofocus
+            formControlName="promoCode"
+            (keydown)="keydownHandler($event)"
+            autocomplete="off">
+    <small class="form-help">
+      используйте международный формат телефонных номеров, например +79876543210
+    </small>
+  </div>
+
+  <div class="form_action">
+    <button class="btn btn-primary">Оплатить</button>
+  </div>
+</form>
+
+<div class="overlay" *ngIf="overlayShow">
+    <div class="wrapper">
+        <button class="btn cancel" (click)="close()">cancel</button>
+        <app-operation-purchase [promoCode]="promoCode" [isPhone]="isPhone" *ngIf="isPhone"></app-operation-purchase>
+
+        <app-message *ngIf="errorMessage !== ''" [message]="errorMessage"></app-message>
+    </div>
+</div>

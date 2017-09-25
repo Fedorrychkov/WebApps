@@ -1,0 +1,15 @@
+@mixin button($color, $text) {
+    border-color: $color;
+    color: $color;
+    app-icon {
+        fill: $color;
+    }
+    &:hover,
+    &:focus {
+        background-color: $color;
+        color: $text;
+        app-icon {
+            fill: $text;
+        }
+    }
+}

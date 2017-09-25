@@ -1,0 +1,110 @@
+.form-head,
+.form-body,
+.form-action {
+    box-sizing: border-box;
+}
+.form-head {
+    font-size: $font-size-lg;
+    font-weight: 300;
+    text-align: center;
+    small {
+        font-size: 50%;
+    }
+}
+.form-action {
+    margin-top: $gap-xs;
+}
+.form-control {
+    margin-top: $offset-lg;
+    display: block;
+    .form-label,
+    .form-input {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        color: $gray-color;
+        transition: all .3s;
+    }
+    .form-input {
+        border-style: solid;
+        background-color: transparent;
+        border-width: 0 0 2px 0;
+    }
+    .error-message {
+        color: #fff;
+        font-weight: 100;
+        display: block;
+    }
+    &.disabled {
+        .form-input {
+           pointer-events: none;
+        }
+    }
+}
+.focused {
+    .form-label,
+    .form-input {
+        color: $blue-color;
+    }
+    &.disabled {
+        .form-label,
+        .form-input {
+            color: $gray-color;
+        }
+    }
+}
+.disabled {
+    pointer-events: none;
+    opacity: .5;
+}
+.error {
+    .form-label {
+        background-color: $red-color;
+        color: #fff;
+    }
+    .form-input {
+        color: $red-color;
+    }
+}
+@media ( min-width: $screen-sm ) {
+    .form-control {
+        letter-spacing: .5px;
+        .form-label {
+            font-size: $font-size-xs;
+            font-weight: 300;
+        }
+        .form-input {
+            padding: $offset-sm;
+            font-weight: 100;
+            font-size: $font-size-sm;
+        }
+        .error-message {
+            margin-top: 4px;
+            padding-top: 2px;
+            border-top: 1px dotted;
+        }
+    }
+    .error {
+        .form-label {
+            padding: $offset-mc;
+        }
+        .error-message {
+            font-weight: 100;
+        }
+    }
+}
+@media ( min-width: $screen-md ) {
+    .form-control {
+        .form-label {
+            font-size: $font-size-sm;
+        }
+        .form-input {
+            padding: $offset-sm $offset-md;
+            font-size: $font-size-md;
+        }
+    }
+}
+@media ( min-width: $screen-lg ) {
+}
+@media ( min-width: $screen-xl ) {
+}

@@ -1,0 +1,14 @@
+@import '../../../assets/styles/_variables';
+@import '../../../assets/styles/_mixins';
+
+:host {
+
+}
+
+.datapicker {
+    width: $screen-sm;
+}
+
+.form-control {
+    margin: 0;
+}

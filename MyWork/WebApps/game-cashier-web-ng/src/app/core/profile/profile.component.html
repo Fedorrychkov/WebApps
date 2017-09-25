@@ -1,0 +1,31 @@
+<app-preloader *ngIf="!loaded"></app-preloader>
+
+<div class="company" *ngIf="profile.company">
+    <div class="caption">Компания:</div>
+    <div class="value">{{ profile.company.name }}</div>
+</div>
+
+<div class="cashier">
+    <div class="caption">кассир:</div>
+    <div class="value">{{ profile.name }}</div>
+</div>
+
+<div class="email">
+    <div class="caption">e-mail:</div>
+    <div class="value">{{ profile.email }}</div>
+</div>
+
+<div class="balance">
+    <div class="caption">личный баланс:</div>
+    <div class="value">{{ profile.currentBalance }}</div>
+</div>
+
+<div class="buffer">
+    <div class="caption">неподтвержденные баллы:</div>
+    <small>Зачисление баллов на баланс произойдет после подтверждения номера телефона пользователями:</small>
+    <div class="value">{{ profile.bufferedBalance }}</div>
+</div>
+
+<div class="logout">
+  <button class="btn btn-primary" (click)="logout()">Выход</button>
+</div>

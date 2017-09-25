@@ -1,0 +1,60 @@
+@import '../../../assets/styles/_variables';
+@import '../../../assets/styles/_mixins';
+
+:host {
+  margin: auto;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: $screen-md;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  & > div {
+    display: inline-block;
+    margin: 18px auto;
+  }
+}
+
+.separator {
+  margin: 48px auto;
+  font-size: $font-size-xs;
+  max-width: $screen-md;
+  & span {
+    padding: 0 $offset-xs;
+    background-color: $smoke-color;
+    &:before {
+      content: '';
+      margin-bottom: -.6px;
+      display: block;
+      border-bottom: 1px solid $dark-color;
+    }
+  }
+}
+.code {
+  font-size: $font-size-md;
+  font-weight: 300;
+  text-align: center;
+
+  & img {
+    display: block;
+    width: 100%;
+    max-width: $screen-sm;
+    margin: 18px auto;
+  }
+}
+
+.code-label, .text-label {
+  margin: 30px auto;
+}
+
+.text-label .value {
+  margin-top: 24px;
+  font-size: $font-size-lg;
+  font-weight: 500;
+  color: $dark-color;
+}
+
+h1 {
+  font-size: $font-size-sm;
+}

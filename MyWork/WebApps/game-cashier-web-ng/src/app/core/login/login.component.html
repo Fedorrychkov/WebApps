@@ -1,0 +1,32 @@
+<form novalidate class="form_content"
+      [formGroup]="loginForm"
+      (submit)="formSubmit(loginForm.value)">
+  <h2 class="form_head">
+    Авторизация
+    {{ responseError }}
+  </h2>
+  <div class="form_group">
+    <input  class="form-input"
+            type="text"
+            autofocus
+            formControlName="email"
+            autocomplete="off"
+            (input)="checkInput()">
+
+    <span class="form_control_message">{{ loginErrorMessage }}</span>
+  </div>
+  <div class="form_group">
+    <input  class="form-input"
+            type="password"
+            formControlName="pass"
+            autocomplete="off"
+            (input)="checkInput()">
+    <span class="form_control_message">{{ passErrorMessage }}</span>
+  </div>
+
+  <div class="form_action">
+    <button class="btn btn-primary"  [disabled]="banned">Вход</button>
+  </div>
+</form>
+
+<button (click)="logout()"></button>

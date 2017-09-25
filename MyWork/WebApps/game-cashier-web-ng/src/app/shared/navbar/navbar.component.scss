@@ -1,0 +1,54 @@
+@import '../../../assets/styles/_variables';
+@import '../../../assets/styles/_mixins';
+
+:host {
+    box-sizing: border-box;
+    display: block;
+    width: $navbar-width;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: transform $animation-fast;
+    box-shadow: 1px 0 0 $lightest-color;
+}
+.navbar__hidden {
+    transform: translate(-100%, 0);
+}
+.navbar__visible {
+    transform: translate(0, 0);
+}
+.navbar_link {
+    color: $dark-color;
+    background: none;
+    display: block;
+    padding: $offset-lg;
+    text-decoration: none;
+    font-size: $font-size;
+    text-align: center;
+    & icon {
+        fill: $gray-color;
+    }
+    &:hover {
+        color: $smoke-color;
+        background-color: $blue-color;
+        transition: $animation-slow;
+    }
+    &:hover icon {
+        transition: $animation-slow;
+        fill: #fff;
+    }
+    &-title {
+        margin: $offset-xs 0 0;
+        display: inline-block;
+    }
+    &__active {
+        color: $smoke-color;
+        background-color: $blue-color;
+        & icon {
+            fill: #fff;
+        }
+    }
+}
