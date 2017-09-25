@@ -1,0 +1,10 @@
+@font-face {
+	font-family: "pf-agora-sans-pro-medium";
+	src: url('pfagorasanspro-medium.eot');
+	src: url('pfagorasanspro-medium.eot?#iefix') format('embedded-opentype'),
+	url('pfagorasanspro-medium.svg#PF Agora Sans Pro') format('svg'),
+	url('pfagorasanspro-medium.woff') format('woff'),
+	url('pfagorasanspro-medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  }

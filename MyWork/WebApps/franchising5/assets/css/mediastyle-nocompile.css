@@ -1,0 +1,1412 @@
+
+@media (max-width: 1250px) {
+	#aboutcompany .top_head {
+		/*background-position:  90% 40%;*/
+	}
+	.goodBuisness .inner {
+		/*padding: 100px 0;*/
+	}
+	.goodBuisness .gbText h2 {
+		/*font-size: 50px;*/
+		max-width: 360px;
+	}
+
+	.goodBuisness .gbText p {
+		font-size: 16px;
+		max-width: 368px;
+		padding-top: 24px;
+	}
+	.goodBuisness .gbImage { 
+		margin-top: -20px;
+	}
+	.goodBuisness .gbImage img {
+		width: 438px; /*545px*/	
+	}
+	.historyAbout .year {
+		font-size: 60px;
+	}
+	.historyAbout .pText h4,
+	.blockTitle,
+	.companies .bottomBlock h4 {
+		font-size: 30px;
+	}
+	.companies .bottomBlock h4 {max-width: 500px;}
+	.button_purp_2 {
+		font-size: 20px;
+		max-width: 300px;
+	}
+	.historyAbout .parts {
+		padding: 40px 0 0;
+	}
+	.historyAbout .pText h4 {
+		max-width: 279px;
+	}
+	.historyAbout .pText p {
+		max-width: 279px;
+	}
+	.historyAbout .pText .bigText {
+		max-width: 354px;
+	}
+	.historyAbout .pText .bigText2 {
+		max-width: 364px;
+	}
+	.historyAbout h3,
+	.diploms h3,
+	.companies h3,
+	.bestface h3,
+	#upakovka_Case h2
+	 {
+		font-size: 50px;
+	}
+
+	.bestface .description p,
+	.bestface .names p { font-size: 16px }
+	.bestface .franchising5 { font-size: 120px; }
+	.bestface .image {
+		max-width: 298px;
+	}
+	.bestface .item { width: 100%; max-width: 45%; }
+	.bestface .item:nth-child(2) {margin-left: 30px;}
+
+	.numCasesInfo h3 {
+		font-size: 50px;
+		/*padding: 30px 0;*/
+	}
+	.numCasesInfo .textBlock span {
+		font-size: 100px;
+	}
+	.numCasesInfo .textBlock div {
+		padding-bottom: 15px;
+	}
+	.numCasesInfo .textBlock p {
+		font-size: 24px;
+		max-width: 360px;
+	}
+	.numCasesInfo .textBlock {
+		max-width: 450px;
+		left: 0;
+	}
+
+	.caseBlockInfo .inner, 
+	.caseBlockInfo,
+	.numCasesInfo .image {
+		height: 500px;
+	}
+
+	#upakovka .top_head {
+		/*background-size: 550px;
+		background-position: 130%;*/
+	}
+	#upakovka .top_head .under_p {
+		max-width: 334px;
+		line-height: 1.2;
+	}
+	#upakovka .top_head .button {
+		max-width: 300px;
+		margin-top: 37px;
+	}
+	#upakovka .top_head .subparagpraph {
+		margin-top: 30px;
+		font-size: 24px;
+	}
+	.gradientBlock {
+		background-size: cover;
+	}
+	.gradientBlock .number {
+		font-size: 50px;
+		padding: 20px 0;
+	}
+	.instruments h2 {
+		white-space: normal;
+	}
+	.check_mark {
+		font-size: 16px;
+	}
+	.instLeft .RightPart img {
+		width: 150%;
+	}
+	.instLeft .leftPart {
+		width: 30%;
+	}
+	.instRight .RightPart img {
+		width: 100%;
+	}
+	.instRight .items .item {
+		width: auto;
+		display: block;
+		padding-left: 10px;
+	}
+	.instRight .items .item h5 {
+		padding-left: 0;
+		font-size: 16px;
+	}
+	.subItemP {
+		font-size: 16px;
+		padding-left: 20px;
+	}
+	.diplom_carusel::before {
+		left: 0px;
+	}
+
+	/** formBlock **/
+	.styleForm h5 {
+		font-size: 30px;
+	}
+	.styleForm h6 {
+		font-size: 18px;
+	}
+	.styleForm .form_title {
+		max-width: 450px;
+	}
+	.styleForm .form_body::before {
+		border:3px solid #fff;
+		top: 15px;
+	}
+	.styleForm {
+		max-width: 483px;
+	}
+	.styleForm input {
+		font-size: 16px;
+	}
+	.styleForm .button {
+		font-size: 20px;
+		max-width: 312px;
+		padding: 19px 0 20px;
+	}
+	.styleForm .submitBox {
+		max-width: 340px;
+		margin: 24px auto 0;
+	}
+	.formBlock {
+		background-size: 550px;
+		background-position: 130%;
+	}
+	.youcanStart h6 {
+		font-size: 24px;
+	}
+	.youcanStart p {
+		font-size: 16px;
+	}
+	#developfranchise .styleForm {
+		max-width: 470px;
+	}
+	#developfranchise .styleForm.styleForm2 {
+		max-width: 470px; /* 520px;*/
+	}
+	#developfranchise .styleForm.styleForm2 .form_body {
+		max-width: 470px;
+	}
+	#developfranchise .styleForm .form_title_45 {
+		font-size: 30px;
+	}
+	.top_head .button.download_button {
+		font-size: 20px;
+		max-width: 470px;
+		padding-top: 15px;
+		padding-bottom: 16px;
+	}
+	.things .text_side h4 {
+		font-size: 30px;
+	}
+	.add_employ h2 {
+		max-width: 400px;
+	}
+	.add_employ p {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+	.simple_actions .text p {
+		font-size: 16px;
+	}
+	.money_check {
+		font-size: 24px;
+	}
+	.calculate_your_profit .subTitle {
+		max-width: 700px;
+	}
+	.calculate_franchdev {
+		display: block;
+		margin-top: 50px;
+	}
+	.calculate_franchdev_text_box {
+		margin: 0;
+		width: 100%;
+	}
+	.calculate_franchdev .button_purp.download_button {
+		max-width: 440px;
+		font-size: 20px;
+		padding: 15px 40px 17px 10px;
+	}
+	.calculate_franchdev_text_box .textpole {
+		font-size: 16px;
+	}
+	.calculate_franchdev_text_box .symbolspole {
+		font-size: 30px;
+	}
+	.calculate_franchdev_text_box .Ruble {
+		font-size: 30px;
+	}
+	.calculate_franchdev_box {
+		max-width: 80%;
+		width: 100%;
+	}
+	.your_profit_calc_box{
+		max-width: 620px;
+		width: 100%;
+		padding: 19px 40px 21px;
+		box-sizing: border-box;
+	}
+	.your_profit_calc_box p {
+		display: inline-block;
+	}
+	.add_employ {
+		padding: 40px 0 50px;
+	}
+	.simple_actions {
+		padding: 40px 0 20px;
+	}
+	.your_profit_line {
+		margin-top: 0;
+	}
+	.calculate_your_profit {
+		padding: 40px 0 50px;
+	}
+	.calculate_box, .your_profit_calc_box {
+		margin-bottom: 30px;
+	}
+	.your_profit_calc_box {
+		margin-top: 35px;
+	}
+	.calculate_franchdev .button_purp.download_button {
+		margin: 35px 0 0;
+	}
+	.form_calculator {
+		padding: 40px 0 0;
+	}
+	.things {
+		padding: 40px 0 50px;
+	}
+
+	.subTitle {
+		font-size: 24px;
+	}
+	.open_office .item {
+		display: block;
+		margin: 0 0 20px;
+	}
+	.open_office .item .text {
+		width: 100%;
+		text-align: left;
+	}
+	.open_office .item .line_block {
+		width: 100%;
+		margin-left: 0;
+		padding: 0;
+	}
+	.open_office .item .line_block p {
+		position: relative;
+	}
+	.open_office .item .metrics {
+		width: 100%;
+		margin: 0;
+	}
+	.things .leftside, .things .rightside {
+		padding-bottom: 0;
+	}
+	.open_office {
+		padding: 40px 0 50px;
+	}
+	.open_office .items {
+		padding: 35px 0 0;
+	}
+	.companyes_right {
+		padding: 50px 0;
+	}
+	.companyes_right .left_side {
+		/*height: 415px;*/
+		padding: 0;
+	}
+	.reviews_partners {
+		padding: 40px 0 50px;
+	}
+	.reviews_partners .item {
+		padding: 50px 0;
+	}
+	.reviews_partners .text_box {
+		background-size: 20px;
+		padding-left: 30px;
+		margin-left: 15px;
+	}
+	.reviews_partners .review_title {
+		font-size: 24px;
+	}
+	.reviews_partners .sub_texts {
+		font-size: 24px;
+	}
+	.reviews_partners .text p{
+		font-size: 16px;
+	}
+	#developfranchise .styleForm.styleForm3 .form_body {
+		max-width: 500px;
+	}
+	#developfranchise .styleForm.styleForm3 h5 {
+		font-size: 24px;
+	}
+	#developfranchise .styleForm.styleForm3 {
+		max-width: 500px;
+	}
+	#developfranchise .styleForm.styleForm3 h5 span {
+		display: inline-block;
+	}
+	.image_side.imagewrap,
+	.things .rightside img {
+		margin: 0;
+	}
+	.open_office .item .metrics h4{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.open_office .item .metrics h4 span {
+		font-size: 15px;
+	}
+	.calc_check_item img {
+		height: 188px;
+	}
+	.calc_field {
+		height: 410px;
+	}
+	.calc_field .calc_title {
+		font-size: 24px;
+	}
+	.calc_field .calc_sub_title {
+		font-size: 30px;
+	}
+	.calc_check_descr p {
+		font-size: 18px;
+	}
+	.calc_field .button {
+		font-size: 20px;
+		max-width: 240px;
+		margin: 30px 0 0;
+	}
+	.calc_field .button.button_under_image {
+		margin: -140px 0 0;
+	}
+	#btn_1_section .calc_field .button {
+		margin: 0;
+	}
+	.calc_names {
+		margin: 0 0 30px;
+	}
+	.question_descr .block_descr output {
+		font-size: 140px;
+	}
+	.question_descr {
+		width: 40%;
+	}
+	.calc_range_descr_prewrap {
+		width: 106% !important;
+	}
+	#img_price {
+		width: 400px;
+	}
+	.question_descr .amount_price {
+		font-size: 20px;
+		left: 50%;
+		transform: translate(-40%, -70%);
+		right: 0;
+	}
+
+
+	.diplom_item {
+		width: 180px;
+	}
+	.companies .logo_item:nth-child(6n)::after{
+		border: none;
+	}
+	.companies .logo_item:nth-child(7n)::after {
+		border-right: 1px solid #efefef;
+	}
+	.more_button {
+		font-size: 30px;
+	}
+	.reviews_partners .image img {
+		max-width: 216px;
+	}
+	.historyAbout .parts {
+		border: none;
+	}
+	.bestface h3 {
+		padding: 0px 0 20px;
+	}
+}
+
+@media (max-width: 1080px) {
+	.reviews_partners .spoiler_text .spoiler_p {
+		display: inline;
+	}
+	.reviews_partners .spoiler_text .open_spoiler {
+		display: none;
+	}
+	#aboutcompany .top_head {
+		/*background-size: 400px;*/
+	}
+	#aboutcompany .top_head .inner {
+		/*padding: 50px 30px 60px;*/
+	}
+	.goodBuisness .inner {
+		/*padding: 40px 50px;*/
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.historyAbout .inner {
+		padding: 0 30px 0px;
+	}
+	.companies .inner,
+	.diploms .inner,
+	.bestface .inner,
+	.AutontifBlock .inner,
+	.instRight .inner,
+	.instBig .inner,
+	.instLeft .inner {
+		padding: 0 30px 0;
+	}
+	.bestface .franchising5 { font-size: 90px; text-align: center;}
+	.numCasesInfo .inner { padding: 0 30px; }
+	.numCasesInfo .textBlock { padding: 0 30px; }
+
+	#upakovka .top_head {
+		/*background-position: 150% 50%;*/
+	}
+	.gradientBlock .inner,
+	.instruments .inner,
+	.form_calculator .inner {
+		padding: 0 30px;
+	}
+	.form_calculator .subTitle {
+		font-size: 24px;
+	}
+	.instruments h2 {
+		/*font-size: 45px;*/
+		max-width: 600px;
+	}
+	.formBlock .inner {
+		padding: 0 30px;
+	}
+	.formBlock {
+		background-position: 150% 50%;
+	}
+	.youcanStart .inner, .add_employ .inner, .things .inner, .open_office .inner,
+	.reviews_partners .inner, .calculate_your_profit .inner, .companyes_right .inner,
+	.simple_actions .inner {
+		padding: 0 30px;
+	}
+	.youcanStart {
+		padding: 40px 0 0;
+	}
+	.calc_range_descr h4 span {
+		font-size: 10px;
+	}
+	.question_descr .amount_price {
+		transform: none;
+		left: 160px;
+		top: 17%;
+		right: auto;
+	}
+	.calc_range_descr h4 {
+		width: 10px;
+	}
+	.calculate_range_descr_more_wrap {
+
+	}
+	.calc_range_descr {
+		width: 103.5%;
+	}
+	.calc_range_descr_prewrap {
+		margin-left: -5px !important;
+		width: 102% !important;
+	}
+	.calc_field h6 {
+		margin-top: 120px;
+	}
+	.calc_check_item img {
+		height: 180px;
+	}
+	.diploms .inner {
+		padding: 0 30px;
+	}
+	.diplom_carusel::before, .diplom_carusel::after {
+		background-color: rgba(255, 255, 255, 0);
+		width: 250px;
+	}
+	.companies .logo_item:nth-child(6n)::after{
+		border-right: 1px solid #efefef;
+	}
+	.companies .logo_item:nth-child(5n)::after{
+		border-right: none;
+	}
+
+}
+
+@media (max-width: 992px) {
+
+	.instRight .rocket img {
+		width: 167px;
+		margin: 0 auto;
+	}
+	.formBlock {
+		background-size: 500px;
+	}
+	.historyAbout .pText {
+		max-width: 45%;
+	}
+	#upakovka .top_head {
+		/*background-size: 500px;*/
+	}
+	.top_head .inner {
+		padding: 50px 30px 70px;
+	}
+
+	.visible__desk {
+		display: none;
+	}
+	.visible__tab {
+		display: block;
+	}
+	.AutontifBlock .RightPart .minimize__tab {
+		width: 150%;
+	}
+	.instRight .RightPart.vertical_bottom_tab {
+		vertical-align: bottom;
+	}
+
+	.simple_actions .item::after {
+		content: none;
+	}
+	.instRight .RightPart.vertical_align_fix {
+		vertical-align: middle;
+	}
+	#img_stat {
+		width: 100%;
+	}
+	.third_quest h6 {
+		margin-top: 150px;
+	}
+	.four_quest h6 {
+		margin-top: 150px;
+	}
+	.image_side.imagewrap {
+		margin-right: -260px;
+	}
+	.calc_check_descr {
+		top: 62%;
+	}
+	.calc_check_descr p {
+		font-size: 16px;
+		margin-top: 8px;
+	}
+}
+
+@media (max-width: 900px) {
+	#aboutcompany .top_head {
+		/*background-position: 120% 40%;*/
+	}
+	.youcanStart .itemRight img {
+		width: 100%;
+	}
+}
+@media (max-width: 850px) {
+	.youcanStart .itemRight img {
+		margin-bottom: -43px;
+	}
+	.goodBuisness .gbImage {
+		width: 39%;
+	}
+	.goodBuisness .gbText {
+		width: 60%;
+	}
+	.historyAbout .pText {
+		max-width: 48%;
+	}
+	.historyAbout .parts .pImage {
+		max-width: 48%;
+	}
+	.bestface .franchising5 { font-size: 80px;}
+	.bestface .item { width: 100%; max-width: 330px; }
+	.bestface .item:nth-child(2) {margin-left: 5px;}
+	.bestface .image { max-width: 250px; }
+	.numCasesInfo .textBlock p {
+		max-width: 300px;
+	}
+	#upakovka .top_head {
+		/*background-position: 195%;*/
+	}
+	.instLeft .leftPart {
+		width: 40%;
+	}
+	.formBlock {
+		background-position: 195%;
+	}
+	.historyAbout .part_block.minimalheight {
+		height: 250px;
+	}
+	.calculate_franchdev_box {
+		max-width: 100%;
+	}
+	.leftside .image_side {
+		margin-right: -200px;
+	}
+	.rightside .image_side {
+		margin-left: -200px;
+	}
+	.calculate_your_profit .subTitle {
+		max-width: 450px;
+	}
+	.companies .logo_item:nth-child(5n)::after{
+		border-right: 1px solid #efefef;
+	}
+	.companies .logo_item:nth-child(4n)::after{
+		border-right: none;
+	}
+
+	.diplom_carusel::before {
+		left: 0px;
+	}
+	.calc_range_line, .question_descr {
+		height: 280px;
+	}
+	.calc_field .calc_sub_title {
+		font-size: 26px;
+	}
+	.calc_check_item img {
+		height: 150px;
+	}
+	.calc_field {
+		height: 370px;
+	}
+}
+@media (max-width: 750px) and (min-width: 690px) {
+	.companyes_right .left_side {
+		min-height: 415px;
+		height: 100%;
+		padding-bottom: 15px;
+	}
+}
+@media (max-width: 750px) {
+	.formBlock {
+		padding: 40px 0;
+	}
+	.historyAbout .part_block.minimalheight {
+		height: auto;
+	}
+	#aboutcompany .top_head {
+		/*background-position: top;*/
+	}
+	#aboutcompany .top_head .inner {
+		/*padding: 50px 30px 60px;*/
+	}
+	#aboutcompany .top_head h1 {
+		max-width: 390px;
+	}
+	#aboutcompany .franchise_system {
+		margin-top: 20px;
+	}
+	.goodBuisness .gbImage, .goodBuisness .gbText {
+		width: 100%;
+		text-align: center;
+	}
+	.goodBuisness .gbText h2 {
+		max-width: 440px;
+		margin: 0 auto;
+		text-align: left;
+		padding: 24px 0 24px;
+	}
+
+	.goodBuisness .gbText p {
+		max-width: 438px;
+		margin: 0 auto;
+		text-align: left;
+		padding: 0;
+	}
+	.historyAbout .parts .pImage {
+		max-width: 100%;
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+		float: none;
+	}
+	.historyAbout .part_block {
+		height: auto;
+		max-width: 438px;
+		width: 100%;
+		padding-bottom: 15px;
+		padding-top: 5px;
+		margin: 0 auto;
+		border-bottom: 1px solid #f8f8f8;
+	}
+	.historyAbout .year {
+		max-width: 438px;
+		width: 100%;
+		text-align: left;
+		margin: 0 auto;
+		font-size: 36px;
+	}
+	.historyAbout .pText {
+		max-width: 438px;
+		display: block;
+		margin: 0 auto;
+	}
+	.historyAbout .visible_no_mobile {
+		display: none;
+	}
+	.historyAbout .visible_no_desk {
+		display: block;
+	}
+	.historyAbout h3 {
+		max-width: 438px;
+		margin: 0 auto;
+	}
+	.historyAbout .inner {
+		padding-top: 0px;
+		padding-bottom: 0;
+	}
+	.historyAbout .parts {
+		border: none;
+	}
+	.bestface h3 {
+		padding: 30px 0 10px;
+	}
+	.goodBuisness .inner {
+		/*padding: 40px 30px;*/
+	}
+	.button_purp_2 {
+		font-size: 18px;
+	}
+	.bestface .item, 
+	.bestface .image, 
+	.bestface .item:nth-child(2) { max-width: 375px; display: block; margin: 0 auto;}
+	.numCasesInfo .image {
+		float: none;
+		max-width: 100%;
+		background-position: center;
+		height: 400px;
+	}
+	.numCasesInfo .textBlock {
+		padding: 20px 0;
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: translate(0, 0);
+	}
+	.numCasesInfo .inner {
+		position: relative;
+		height: auto;
+	}
+	.caseBlockInfo {
+		height: auto;
+	}
+	.numCasesInfo .visible_no_mobile {
+		display: none !important;
+	}
+	.numCasesInfo .visible_no_desk {
+		display: inline-block !important;
+	}
+	.numCasesInfo .textBlock p {
+		font-size: 20px;
+		display: inline-block;
+		max-width: 100%;
+	}
+	.numCasesInfo .textBlock {
+		max-width: 100%;
+	}
+	.numCasesInfo .textBlock span{
+		font-size: 36px;
+		display: inline-block;
+		padding-right: 5px;
+	}
+	.numCasesInfo .button {
+		margin-top: 0;
+		margin-top: 15px;
+	}
+	.numCasesInfo .textBlock div {
+		padding-bottom: 4px;
+	}
+	.numCasesInfo .marginBlock {
+		margin-top: 0;
+	}
+	#upakovka .top_head {
+		/*background-position: top;*/
+	}
+	.top_head .inner {
+		padding: 60px 30px;
+	}
+	#upakovka .top_head .button {
+		max-width: 250px;
+		margin-top: 35px;
+	}
+	#upakovka .top_head .subparagpraph,
+	#upakovka .top_head .under_p {
+		margin-top: 25px;
+	}
+	.gradientBlock .number {
+		padding: 0;
+	}
+	.gradientBlock p {
+		display: block;
+	}
+	.gradientBlock p:nth-child(2) {
+		padding-left: 27px;
+	}
+	.visible__desk_tab {
+		display: none !important;
+	}
+	.visible__mob {
+		display: block !important;
+	}
+	.instRight .RightPart,
+	.instRight .leftPart,
+	.instLeft .leftPart,
+	.AutontifBlock .leftPart {
+		width: 100%;
+		display: block;
+	}
+	.AutontifBlock,
+	.instLeft,
+	.instRight {    
+		width: 100%;
+	    margin: 0;
+	    max-width: 400px;
+	}
+	.AutontifBlock .RightPart img,
+	.instLeft .RightPart img,
+	.instRight .RightPart img {
+		width: auto;
+	}
+	.AutontifBlock,
+	.instLeft, .instRight {
+		padding: 40px 0 30px;
+	}
+	.blockTitle {
+		margin: 10px 0 0;
+	}
+	.blockParagraph {
+		padding: 20px 0 0;
+	}
+	.formBlock {
+		background-image: none !important;
+	}
+	.youcanStart .itemRight {
+		display: block;
+	}
+	.youcanStart .itemRight img {
+		transform: scale(-1, 1);
+		margin-bottom: 0;
+	}
+	.youcanStart .itemRight,
+	.youcanStart .itemLeft {
+		width: 100%;
+		max-width: 400px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.youcanStart {
+		width: 100%;
+	}
+	.youcanStart p {
+		margin: 15px 0;
+	}
+	.youcanStart h5 {
+		margin: 0 0 30px;
+	}
+	.youcanStart .item .doljnost {
+		margin: 10px 0 0;
+	}
+	.youcanStart .doljnost p {
+		margin: 5px 0 0;
+	}
+	.youcanStart {
+		padding: 40px 0 50px;
+	}
+
+	.calc_range_descr {
+		width: 102%;
+	}
+	.calculate_franchdev{
+		margin: 30px 0 0;
+	}
+	.add_employ, .companyes_right, .reviews_partners, .reviews_partners .item,
+	.calculate_your_profit, .things, .open_office {
+		padding: 30px 0;
+	}
+	.form_calculator {
+		padding: 40px 0 0;
+	}
+	.simple_actions {
+		padding: 30px 0 20px;
+	}
+	.simple_actions .items {
+		margin: 30px 0;
+	}
+	.reviews_partners .item {
+		display: block;
+	}
+	.reviews_partners .text_box {
+		margin-left: 0;
+	}
+	.reviews_partners .review_title {
+		margin-top: 24px;
+	}
+	.reviews_partners .image img {
+		margin-left: 30px;
+	}
+	.reviews_partners .sub_texts {
+		margin-top: 20px;
+	}
+	.reviews_partners .text {
+		padding: 30px 0;
+	}
+	.reviews_partners .sub_texts span {
+		display: block;
+	}
+	.reviews_partners .sub_texts span.Ruble {
+		display: inline-block;
+	}
+	#developfranchise .top_head .under_p em{
+		display: block;
+	}
+	.calculate_franchdev .button_purp.download_button span, 
+	.top_head .button.download_button span{
+		display: none;
+	}
+	.calculate_franchdev .button_purp.download_button,
+	.top_head .button.download_button {
+		max-width: 330px;
+		padding: 15px 40px 17px 10px;
+	}
+	.calc_checkbox {
+		flex-wrap: wrap;
+	}
+	.calc_check_item {
+		width: 33.3%;
+	}
+	.calc_check_item img {
+		width: 100%;
+	}
+	.calc_range {
+		display: block;
+	}
+	.calc_range_line {
+		width: 100%;
+	}
+	.question_descr {
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	#img_time, #img_stat {
+		width: auto;
+	}
+	.calc_field {
+		height: auto;
+	}
+	.calc_range_line, .question_descr {
+		height: auto;
+	}
+	.question_descr.question_absolute {
+		height: 360px;
+	}
+	.calc_field h6 {
+		margin: 0 0 10px;
+		position: relative;
+		width: 100%;
+		text-align: right;
+		right: 0;
+	}
+	.question_descr .amount_price {
+		top: 22%;
+		left: 50%;
+		transform: translate(-30%, 10px);
+	}
+	.calc_field .buttom_desktop {
+		display: none !important;
+	}
+	.calc_field .button {
+		display: block;
+	}
+	#slider-time, #img_time {
+		display: none;
+	}
+	#slider-time-mobile, #img_time-mobile {
+		display: block;
+	}
+	.question_descr .amount_price {
+		font-size: 16px;
+	}
+	#img_price{
+		width: 100%;
+	}
+	#img_stat {
+		max-width: 420px;
+		width: 100%;
+	}
+	.question_absolute {
+		margin: 60px 0 60px;
+	}
+	.spad_rost {
+		position: absolute;
+		width: 100%;
+		bottom: 10px;
+		top: 0;
+	}
+
+	.spad_rost span:nth-child(2) {
+		margin-right: 30px;
+	}
+	/*.calc_field .button, #btn_2_section .button {
+		margin: 30px auto 0;
+	}*/
+	.calc_field .button {
+		margin: 30px 0 0;
+	}
+	.calc_range {
+		margin: 0;
+	}
+	.calc_names {
+		margin-bottom: 10px;
+	}
+	.calc_field {
+		padding: 30px 0;
+	}
+	.diplom_carusel::before {
+		left: -80px;
+		width: 200px;
+	}
+	.diplom_carusel::after {
+		right: -80px;
+		width: 200px;
+	}
+	.companies {
+		/*padding: 30px 0 0;*/
+	}
+	.diplom_carusel {
+		overflow: hidden;
+		margin: 0 30px;
+		padding: 0 0 70px;
+	}
+	.carusel_btn {
+		transform: translate(0,0);
+		bottom: 0;
+		top: auto;
+		width: 25px;
+		height: 50px;
+	}
+	.btn-next {
+		right: 50%;
+		transform: translate(180%,0) rotate(180deg)
+	}
+	.btn-prev {
+		left: 50%;
+		transform: translate(-180%,0);
+	}
+	.diploms {
+		/*padding: 30px 0;*/
+	}
+	.companies .logo_item:nth-child(4n)::after{
+		border-right: 1px solid #efefef;
+	}
+	.companies .logo_item:nth-child(3n)::after{
+		border-right: none;
+	}
+	.more_button {
+		font-size: 20px;
+	}
+	.diploms h3 {
+		/*padding-bottom: 50px;*/
+	}
+	.newsabout .inner .page-content .underline {
+		margin: 0;
+	}
+	.check_mark {
+		margin-left: 0;
+	}
+	.instBig .leftPart {
+		vertical-align: top;
+	}
+}
+@media (max-width: 690px) {
+	.gradientBlock .number {
+		font-size: 40px;
+		padding-left: 0px;
+	}
+	#aboutcompany .top_head h1 {
+		max-width: 350px;
+	}
+	.goodBuisness .gbText h2{
+
+	}
+	.historyAbout h3,
+	.bestface h3,
+	.diploms h3,
+	.numCasesInfo h3,
+	#upakovka_Case h2 { font-size: 36px }
+	.historyAbout .pText p {font-size: 16px;}
+	.bestface .names h4,
+	.historyAbout .pText h4,
+	.companies .bottomBlock h4 {font-size: 24px;}
+	.bestface .franchising5 { font-size: 40px; text-align: center;}
+	.add_employ h2, .simple_actions h3, .calculate_your_profit h3,
+	.things h3, .companyes_right h3,.reviews_partners .pageTitle, .companies h3 {
+		font-size: 30px;
+	}
+
+	.form_calculator .subTitle {
+		font-size: 20px;
+	}
+	.numCasesInfo .textBlock p {
+		font-size: 16px;
+	}
+	.numCasesInfo .image {
+		height: 300px;
+	}
+	#upakovka .top_head .subparagpraph,
+	#upakovka .top_head .under_p { font-size: 20px;}
+	#upakovka .top_head .under_p {
+		max-width: 300px;
+	}
+	.gradientBlock .text { font-size: 16px;}
+	.gradientBlock p {margin: 0;}
+	.gradientBlock .inner {
+		/*padding: 0 10px;*/
+	}
+	.instruments h2 { /*font-size: 40px*/ }
+	
+	.simple_actions .item {
+		height: auto;
+		display: block;
+		width: 100%;
+		margin: 0 0 25px;
+	}
+	.item_wrap {
+		position: relative;
+		height: auto;
+		transform: none;
+		display: flex;
+		text-align: center;
+		
+	}
+	.simple_actions .text, .simple_actions .item:nth-child(4) .text {
+		margin-top: 0;
+		max-width: 300px;
+		text-align: left;
+		width: 80%;
+	}
+	.simple_actions .img {
+		width: 120px;
+		box-sizing: content-box;
+	}
+	.simple_actions .img img {
+		margin: 0 auto;
+		display: block;
+	}
+	.money_check, .subTitle {
+		font-size: 20px;
+		max-width: 450px;
+	}
+	.your_profit_line .right p {
+		padding: 10px 15px 0;
+	    font-size: 18px;
+	}
+	.calculate_box h4, .things .text_side p {
+		font-size: 16px;
+	}
+	.calculate_range_descr h4 {
+		font-size: 10px;
+	}
+	.calculate_range_descr em {
+		text-align: left;
+	}
+	.calculate_range_descr_more_wrap h4 {
+		width: 10px;
+		font-size: 10px;
+	}
+	.calculate_range_descr em {
+		font-size: 14px;
+	}
+	.calculate_range {
+		margin-top: 5px;
+	}
+	.calculate_box, .your_profit_calc_box {
+		margin-bottom: 15px;
+	}
+	.calculate_franchdev_text_box .symbolspole, .calculate_franchdev_text_box .Ruble,
+	.your_profit_calc_box p, .things .text_side h4 {
+		font-size: 24px;
+	}
+
+	.leftside .image_side, .rightside .image_side, .things .rightside .image_side {
+		margin: 0 auto;
+	}
+	.leftside .image_side img, .image_side.imagewrap, .things .rightside img, .image_side.imagewrap img {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.companyes_right .right_side img {
+		margin: 0 auto;
+		width: 130%;
+	}
+	.things .text_side, .things .text_side.text_wrapp_margin_left {
+		margin: 0;
+	}
+	.things .leftside {
+		flex-direction: column-reverse;
+	}
+	.things .rightside {
+		display: block;
+	}
+	.companyes_right .left_side .text {
+		font-size: 16px;
+	}
+	.companyes_right .inner {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.companyes_right .left_side, .companyes_right .right_side{
+		width: 100%;
+		height: auto;
+	}
+	.things .leftside, .things .rightside {
+		padding-top: 30px;
+	}
+	.calculate_franchdev .button_purp.download_button,
+	.top_head .button.download_button {
+		font-size: 16px;
+		max-width: 270px;
+	}
+	.top_head .button.download_button {
+		margin-top: 35px;
+	}
+	#developfranchise .top_head h1 {
+		max-width: 400px;
+	}
+
+}
+@media (max-width: 590px) {
+	.styleForm h5 {
+		font-size: 24px;
+	}
+	.novisible_on_mobile {
+		display: none;
+	}
+	.calc_field .button {
+		margin: 30px 0 0;
+	}
+	.diplom_carusel::before, .diplom_carusel::after {
+		content: none;
+	}
+	#aboutcompany .top_head h1 {
+		max-width: 350px;
+	}
+	.goodBuisness .gbImage img {
+		width: 100%;	
+	}
+	.AutontifBlock,
+	.instLeft,
+	.instRight {
+		max-width: 440px;
+		width: 100%;
+	}
+	.styleForm .form_body::before {
+		content: none;
+	}
+	.styleForm .button {font-size: 16px; max-width: 260px;
+		padding: 14px 0 15px;
+		margin-left: 0; margin-right: 0;
+	}
+	.styleForm input {max-width: 260px;}
+	.styleForm .inputBox label {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.styleForm .inputBox {
+		margin: 15px 0 0;
+		width: 100%;
+	}
+	.styleForm form {
+		max-width: 100%;
+		margin: 25px 0 0;
+	}
+	.styleForm .submitBox {
+		margin: 30px 0 0;
+		text-align: left;
+	}
+	.styleForm h6 span {
+		padding: 0;
+		background: none;
+	}
+	.styleForm h5 {
+		text-align: left;
+	}
+	.styleForm .form_title {
+		text-align: left;
+		max-width: 100%;
+	}
+	.styleForm .form_body {
+		margin: 20px 0 0;
+	}
+
+	#upakovka_Case h2,
+	.instruments h2 {
+		font-size: 30px;
+	}
+	.calc_check_item {
+		width: 50%;
+	}
+	.question_descr .amount_price {
+		left: 50%;
+		transform: translate(-30%, 5%);
+	}
+	.companies .logo_item:nth-child(3n)::after{
+		border-right: 1px solid #efefef;
+	}
+	.companies .logo_item:nth-child(2n)::after{
+		border-right: none;
+	}
+	.companies .logo_item {
+		margin: 10px;
+	}
+
+}
+@media (max-width: 480px) {
+	.diplom_item {
+		width: 140px;
+		margin: 0;
+	}
+
+	.diplom_carusel {
+		overflow: hidden;
+		width: 140px;
+		margin: 0 auto;
+		padding: 0 0 70px;
+	}
+	.calculate_box h4 {
+		max-width: 280px;
+	}
+	.question_descr.question_absolute {
+		height: 300px;
+	}
+}
+@media (max-width: 440px) {
+	.calculate_range_descr, .calculate_range_descr_more_wrap {
+		width: 103.5%;
+	}
+}
+@media (max-width: 390px) {
+	.your_profit_calc_box p b {
+		display: block;
+	}
+	.bestface .franchising5 { font-size: 30px;}
+}
+@media (max-width: 350px) {
+}
