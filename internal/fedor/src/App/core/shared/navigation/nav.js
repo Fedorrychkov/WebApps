@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import './nav.scss';
 import LinkComponent from './link/link';
@@ -17,16 +17,26 @@ export default class NavComponent extends Component {
 
     componentDidMount() {
         
-        const nav = [
-            {id: 0, name: 'About', url: '#'},
-            {id: 2, name: 'Skills', url: '#'},
-            {id: 3, name: 'Portfolio', url: '#'},
-            {id: 4, name: 'Contact', url: '#'}
+        var en = [
+            {name: 'About', url: '#'},
+            {name: 'Skills', url: '#'},
+            {name: 'Portfolio', url: '#'},
+            {name: 'Contacts', url: '#'}
+        ];
+        var ru = [
+            {name: 'Обо мне', url: '#'},
+            {name: 'Опыт', url: '#'},
+            {name: 'Портфолио', url: '#'},
+            {name: 'Контакты', url: '#'}
         ];
 
-        return nav.map((item) => (
-            <LinkComponent key={item.id} name={item.name} url={item.url}/>
-        ))
+        return en.map((item, index) => (
+            <LinkComponent key={index} name={item.name} url={item.url} />
+        ));
+    }
+
+    onChange() {
+        console.log('change');
     }
 
     render() {
@@ -35,7 +45,7 @@ export default class NavComponent extends Component {
                 <ul className="navigation__items">{
                     this.componentDidMount()
                 }
-                <LangComponent />
+                <LangComponent onChange={this.onChange} />
                 </ul>
                 
             </nav>
