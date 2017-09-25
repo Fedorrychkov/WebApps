@@ -1,0 +1,80 @@
+.news_post {
+  width: 100%;
+  height: 320px;
+  margin: $offset-lg 0;
+  position: relative;
+  @include flex_container(flex-start, flex-start, nowrap);
+  background-color: $white;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  @include transition($animation-slow);
+  
+  &:hover {
+    transform: translate3d(0, -1px, 0);
+    @include transition($animation-slow);
+  }
+  &:hover &__meta {
+    transform: translate3d(0, -3px, 0);
+  }
+  &__link {
+    display: inline-block;
+    height: 100%;
+    box-shadow: 1px 0 4px rgba(0,0,0,0.15);
+    opacity: 0.9;
+    @include transition($animation-slow);
+    &:hover {
+      opacity: 1;
+      @include transition($animation-slow);
+    }
+  }
+  &__image {
+    background-color: $color-gray;
+    width: 420px;
+    height: 320px;
+    display: inline-block;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__content {
+    padding: $offset-lg;
+    display: inline-block;
+  }
+  &__button {
+    margin: $offset-md 0 0;
+  }
+  &__title {
+    font-size: 2.5rem;
+    @include transition($animation-slow);
+    margin-left: -2px;
+    margin-bottom: $offset-sm;
+
+    &:hover {
+      color: $color-darker;
+    }
+  }
+  &__text {
+    color: $color-gray;
+    cursor: default;
+  }
+  &__date {
+    position: absolute;
+    right: $offset-md;
+    top: $offset-sm;
+    color: $color-dirty;
+    font-size: 1rem;
+  }
+  &__meta {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    z-index: 1;
+    color: $white;
+    background-color: $pink-button;
+    font-size: 1.2rem;
+    padding: $offset-sm $offset-lg;
+    max-width: 134px;
+    width: 100%;
+    text-align: center;
+    @include transition($animation-slow);
+  }
+}

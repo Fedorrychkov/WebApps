@@ -1,0 +1,48 @@
+.bride_page {
+
+  &__inner {
+    background-color: $white;
+    padding: $offset-md;
+  }
+  &__images .material-placeholder {
+    display: inline-block;
+  }
+  &__images img {
+    width: 100%;
+  }
+  &__button {
+    font-size: 1.2rem;
+  }
+  &__controls {
+    margin: $offset-md 0 0;
+    padding: $offset-md 0 0;
+    border-top: 1px solid $color-dirty;
+  }
+  &__title {
+    margin: $offset-md 0;
+  }
+  &__content {
+    line-height: 1.2;
+    margin: $offset-lg*2 0 $offset-lg;
+    padding-left: $offset-lg*2;
+    position: relative;
+    &::before {
+      content: "";
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 48px;
+      height: 40px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &_wrap {
+      @include flex_container(space-between, flex-start, wrap);
+    }
+  }
+  
+  &__dress {
+    margin: $offset-md 0 0;
+  }
+}

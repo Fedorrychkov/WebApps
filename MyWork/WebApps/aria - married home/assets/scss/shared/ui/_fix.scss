@@ -1,0 +1,22 @@
+.fix {
+  position: fixed;
+  display: inline-block;
+  z-index: 10;
+
+  &__invite_body {
+    bottom: 0;
+    right: 10%;
+    opacity: 1;
+    display: none;
+    transform: translate3d(0, 110%, 0);
+  }
+
+  &__invite_button {
+//    transform: translate3d(0, 110%, 0);
+//    @include transition($animation-normal);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.product {
+
+  &__inner {
+    background-color: $white;
+    padding: 20px;
+    border-radius: 2px;
+  }
+
+  &__header {
+    position: relative;
+  }
+  
+  &__title {
+  }
+  
+  &__content {
+
+  }
+  
+  &__text {
+    width: 50%;
+  }
+
+  &__image {
+    width: 50%;
+
+    & img {
+      width: 100%;
+      margin: 0 0 $offset-md;
+    }
+  }
+
+  &__info {
+    cursor: default;
+
+    &--title {
+
+    }
+
+    &--desc {
+      padding: $offset-xs 0 0;
+      color: $color-gray;
+    }
+  }
+
+  &__invite {
+    border: 1px solid $color-gray;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    padding: $offset-lg 0;
+    position: relative;
+    @include transition($animation-normal);
+
+    & p {
+      font-size: 1.5rem;
+    }
+  }
+
+}

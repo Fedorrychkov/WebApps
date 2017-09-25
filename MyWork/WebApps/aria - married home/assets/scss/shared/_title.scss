@@ -1,0 +1,19 @@
+.title {
+  font-size: $font-xl;
+  color: $font-color;
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  &__block {
+    font-size: 3rem;
+    position: relative;
+
+    &-child {
+      font-size: 2rem;
+      position: relative;
+    }
+  }
+}

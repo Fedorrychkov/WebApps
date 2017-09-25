@@ -1,0 +1,19 @@
+.footer_contact {
+  
+  &__phone {
+    text-align: right;
+    &_link {
+      font-size: 1.7rem;
+      color: $color-light;
+      &:hover {
+        color: $color-lightest;
+      }
+      &:hover .footer_contact__phone_icon {
+        color: $color-lightest;
+      } 
+    }
+    &_icon {
+      color: $color-light;
+    }
+  }
+}

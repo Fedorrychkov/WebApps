@@ -1,0 +1,17 @@
+.footer_menu {
+
+  &__item {
+    display: block;
+  }
+
+  &__link {
+    color: $color-light;
+    font-size: 1.6rem;
+    line-height: 1;
+    font-family: "Gabriola";
+
+    &:hover {
+      color: $color-lightest;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.socials {
+  display: block;
+  
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-color: $pink-button;
+    border-radius: 50%;
+    @include transition($animation-normal);
+    
+    &:hover {
+      background-color: $pink-light;
+      @include transition($animation-normal);
+    }
+  }
+}

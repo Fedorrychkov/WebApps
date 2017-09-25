@@ -1,0 +1,14 @@
+/*
+Theme Name: AriaStudio
+Description: Шаблон специально разработан для компании Aria - Дом счастливых невест в 2017 году. По всем возникшим вопросам пишите разработчику, контактная форма на моём сайте. 
+Author: Fedor Rychkov
+Author URI: https://fedorrychkov.com/
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: wedding, company, blog, shop, information
+Text Domain: AriaStudio
+*/
+.bride_page__content::before {
+    background-image: url(assets/img/comma.jpg);
+}

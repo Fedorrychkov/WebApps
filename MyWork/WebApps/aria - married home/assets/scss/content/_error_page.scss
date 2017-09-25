@@ -1,0 +1,45 @@
+.error_page {
+  &__inner {
+    background-color: $white;
+    padding: $offset-md;
+  }
+  &__content {
+    text-align: center;
+    position: relative;
+  }
+  &__error {
+    font-size: 15rem;
+    line-height: 1;
+    color: $color-gray;
+    &_text {
+      font-size: 4rem;
+      color: $color-gray;
+    }
+  }
+  &__menu {
+    margin: $offset-lg*2 0 $offset-lg;
+    &_title {
+      font-size: 1.5rem;
+    }
+  }
+  &__nav {
+    display: block;
+    position: relative;
+    &_li {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &_a {
+      margin: 0 $offset-md;
+      &:hover {
+        color: $color-darkest;
+      }
+    }
+  }
+  &__button {
+    position: absolute;
+    top: -5px;
+    right: 0;
+  }
+}

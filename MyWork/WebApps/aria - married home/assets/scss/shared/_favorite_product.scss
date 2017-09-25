@@ -1,0 +1,25 @@
+.favorite_product {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+  & i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    font-size: 3rem;
+    color: $color-dirty;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-light;
+    }
+
+    &.favorite_product__active {
+      color: $pink-button;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+.nav {
+  margin: 20px 0 0;
+  background: #fff;
+  height: auto;
+  border-top: 1px solid rgba(255,255,255,0.09);
+  border-radius: 2px;
+  /*box-shadow:  0 1px 1px rgba(0,0,0,0.03);*/
+  box-shadow: none;
+  line-height: 1;
+  width: 100%;
+  position: relative;
+  display: block;
+  z-index: 13;
+  @include transition(0.6);
+
+
+  & ul {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    @include flex_container(space-around, flex-start, wrap);
+  }
+
+  & li {
+    position: relative;
+    float: none;
+  
+    &:hover ul {
+      display: block;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.23);
+      opacity: 1;
+      @include transition($animation-normal);
+    }
+
+    & ul {
+      width: 100%;  
+      position: absolute;
+      left: 0;
+      z-index: 15;
+      top: 66px;
+      display: none;
+      opacity: 0;
+      background-color: $white;
+
+
+      & li {
+        position: relative;
+        z-index: 2;
+        display: block;
+        width: 100%;
+
+        & a {
+          font-size: 1.4rem;
+          padding-left: $offset-sm;
+          padding: $offset-sm;
+          color: $color-gray;
+          @include transition($animation-normal);
+          display: block;
+
+          &:hover {
+            color: $color-dark;
+            background-color: $color-lighter;
+          }
+        }
+      }
+    }
+  }
+
+  & a {
+    padding: 20px 10px;
+    font-size: 1.8rem;
+    color: $color-dark;
+    font-family: "Gabriola";
+
+    &:hover {
+      background: none;
+      color: $color-darker;
+    }
+  }
+}
+
+@keyframes navIcon {
+  0 {transform: rotate(0);}
+  100% { transform: rotate(-90deg);}
+}
+
+@media (max-width: $screen-md) {
+   .nav {
+
+      &__icon {
+      cursor: pointer;
+      width: 30px;
+      height: 28px;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      z-index: 99;
+      transform: translate3d(0, -50%, 0);
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &__menu {
+      z-index: 1;
+      line-height: 0;
+      width: 100%;
+      height: 2px;
+      display: inline-block;
+      background-color: $white;
+      position: relative;
+
+      &::after, &::before {
+        content: "";
+        position: absolute;
+        background-color: $white;
+        width: 100%;
+        height: 2px;
+        @include transition(0.2);
+      }
+
+      &::after {
+        top: -10px;
+        left: 0;
+      }
+
+      &::before {
+        bottom: -10px;
+        left: 0;
+      }
+    }
+
+    &__active {
+      animation-name: navIcon;
+      animation-duration: .3s;
+      animation-delay: 0s;
+      animation-timing-function: ease-out;
+      animation-play-state: running;
+      animation-fill-mode: forwards;
+      
+      &::after, &::before {
+        @include transition(0.2);
+      }
+
+      &::after {
+        transform: rotate(45deg);
+        top: 0;
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+        bottom: 0;
+      }
+    }
+
+    &__active.nav__menu {
+      background-color: rgba(0,0,0,0);
+    }
+
+
+    &__navActive {
+      padding: 20px 80px 20px 20px;  
+      @include transition(0.6);  
+
+      & ul {
+        width: 100%;
+        height: auto;
+        overflow: inherit; 
+      }
+    }
+  }
+}

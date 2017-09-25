@@ -1,0 +1,35 @@
+.about_feature {
+  
+  &__title {
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: $offset-lg 0;
+    padding: $offset-md 0;
+    border: 1px solid $color-light;
+    border-left: none;
+    border-right: none;
+  }
+  &__item {
+    width: 45%;
+    margin: $offset-md 0;
+
+    &_img {
+      opacity: 0.7;
+    }
+    
+    &_title {
+      color: $color-dark;
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin: 0 0 $offset-sm;
+      margin-left: $offset-md;
+    }
+
+    &_p {
+      margin-left: $offset-md;
+      line-height: 1;
+      color: $color-gray;
+    }
+  }
+}

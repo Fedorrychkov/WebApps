@@ -1,0 +1,64 @@
+.button {
+  background-color: $hover-color;
+  color: $white;
+  display: inline-block;
+  padding: $offset-sm $offset-md;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: #41aafe;
+  }
+
+  &__invite {
+    background-color: $pink-button;
+    &:hover {
+      background-color: $pink-light;
+    }
+  }
+
+  &__promise_invite {
+    background: none;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    color: $color-gray;
+
+    &:hover {
+      background: none;
+      color: $color-dark;
+    }
+  }
+
+  &__dress {
+    background-color: $pink-button;
+   &:hover {
+      background-color: $pink-light;
+    } 
+  }
+
+  &__post {
+    font-size: 1.4rem;
+    background: none;
+    border: 2px solid $color-dark;
+    color: $color-dark;
+    @include transition($animation-slow);
+    
+    &:hover {
+      color: $white;
+      border-color: $pink-light;
+      background-color: $pink-light;
+    }
+  }
+  &__last_news {
+    background: none;
+    color: $color-dark;
+    border: 1px solid $color-dark;
+    @include transition($animation-slow);
+    &:hover {
+      color: $color-darkest;
+      background-color: $color-light;
+    }
+  }
+}

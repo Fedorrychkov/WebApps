@@ -1,0 +1,19 @@
+.footer_socials {
+  padding: $offset-md 0 0;
+  & .socials {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__link {
+    width: 34px;
+    height: 34px;
+
+    &:hover {
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.contact_page {
+  &__inner {
+    background-color: $white;
+  }
+  &__map {
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+  &__content {
+    position: relative;
+    align-items: stretch;
+  }
+  &__title {
+    text-align: left;
+    margin-bottom: $offset-md;
+  }
+  &__logo {
+    margin-bottom: $offset-md;
+  }
+  &__info {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 0 $offset-md;
+  }
+  &__contact {
+    margin: $offset-xs 0;
+    font-style: normal;
+    display: block;
+  }
+  &__link {
+    white-space: nowrap;
+
+    &:hover {
+      color: $color-gray;
+    }
+  }
+  &__button {
+    margin: $offset-lg 0 $offset-sm;
+  }
+  &__promise {
+    font-size: 1.4rem;
+    display: inline-block;
+    @include flex_container(flex-start, center, wrap);
+    & i {
+      color: $pink-button;
+      display: inline-block;
+      margin-right: $offset-md;
+    }
+    & button {
+      font-size: 1.4rem;
+      margin-left: $offset-md;
+    }
+  }
+}

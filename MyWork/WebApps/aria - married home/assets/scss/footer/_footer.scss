@@ -1,0 +1,21 @@
+.footer {
+  background-color: $color-darker;
+  padding: $offset-lg 0;
+
+  &_item {
+    width: 25%;
+    display: inline-block;
+  }
+
+  &__copyright {
+    width: 100%;
+    text-align: center;
+    margin: $offset-md 0 0;
+    font-family: "Gabriola";
+    font-size: 2rem;
+  }
+
+  &__inner {
+    flex-wrap: wrap;
+  }
+}

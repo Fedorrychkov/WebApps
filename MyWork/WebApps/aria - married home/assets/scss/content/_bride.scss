@@ -1,0 +1,61 @@
+.bride {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  @include flex_container(space-between, flex-start, nowrap);
+  background-color: $white;
+  &__link {
+    display: inline-block;
+    width: 48%;
+    height: 350px;  
+    margin: $offset-md 0;
+  }
+  &__image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+  }
+  &__content {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    text-align: left;
+    height: 100%;
+  }
+  &__title {
+    font-size: 1.6rem;
+    color: $color-dark;
+    padding: $offset-sm $offset-md;
+    text-align: left;
+    display: block;
+  }
+  &__button {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: $offset-md $offset-md 0;
+    position: absolute;
+    bottom: $offset-lg;
+    right: $offset-lg;
+  }
+  &:hover &__button {
+    border-color: rgba(245, 108, 153, 0.5);
+    background-color: rgba(245, 108, 153, 0.5);
+    color: white;
+  }
+  &:hover &__button:hover {
+    background-color: $pink_button;
+    border-color: $pink-button;
+  }
+  &__review {
+    padding: $offset-sm $offset-md;
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+}

@@ -1,0 +1,130 @@
+.collection {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  height: 100%;
+  margin: 0;
+  border: none;
+  @include transition($animation-slow);
+  
+  &__start {
+    @include posAbsolute;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 1;
+    @include transition($animation-slow);
+  }
+
+  &:hover::after {
+    background-color: rgba(0,0,0,0.4);
+    top: 0;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+    transform: translate3d(0, 0, 0);
+    height: 100%;
+  }
+  
+  &:hover:before {
+    transform: translate3d(-50%, 0, 0);
+    @include transition($animation-slow);
+    opacity: 1;
+  }
+
+  &:before {
+    content: "Большой размерный ряд";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    color: $white;
+    width: 80%;
+    transform: translate3d(-50%, 90px, 0);
+    z-index: 1;
+    opacity: 0;
+    @include transition($animation-slow);
+  }
+
+  &:hover &__button {
+    transform: translate3d(0, 0, 0);
+    @include transition($animation-slow);
+    opacity: 1;
+  }
+
+  &__button {
+    margin: $offset-md 0 0;
+    opacity: 0;
+    transform: translate3d(0, 25%, 0);
+    @include transition($animation-slow);
+  }
+
+  &__link {
+    width: 30%;
+    background-color: $white;
+    margin: 30px 0;
+    display: inline-block;
+    height: 500px;
+    position: relative;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    @include transition($animation-normal);
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    display: block;
+    transform: translate3d(-50%, -50%, 0);
+    color: $white;
+    z-index: 2;
+  }
+  
+  &:hover &__title {
+    transform: translate3d(0, 0, 0);
+    @include transition($animation-normal);
+    color: $white;
+  }
+
+  &:hover &__title::after {
+    width: 50px;
+    @include transition($animation-normal);
+  }
+
+  &__title {
+    padding: 15px 0 0;
+    transform: translate3d(0, -15%, 0);
+    position: relative;
+    font-size: 2rem;
+    color: $white;
+    @include transition($animation-normal);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      border-top: 2px solid $white;
+      @include transition($animation-normal);
+    }
+  }
+
+  &__text {
+
+  }
+}

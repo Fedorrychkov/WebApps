@@ -1,0 +1,174 @@
+@import './scss/variables';
+@import './scss/mixins';
+
+@import './scss/shared/logo_img';
+@import './scss/shared/flex_co';
+@import './scss/shared/call_me_button';
+@import './scss/shared/contact_phone';
+@import './scss/shared/info_alert';
+@import './scss/shared/title';
+@import './scss/shared/arrow_right';
+@import './scss/shared/button';
+@import './scss/shared/breadcrumbs';
+@import './scss/shared/animations';
+@import './scss/shared/socials';
+@import './scss/shared/favorite_product';
+
+@import './scss/shared/ui/button';
+@import './scss/shared/ui/fix';
+@import './scss/shared/ui/popup_form';
+@import './scss/shared/ui/page_navigation';
+@import './scss/shared/ui/text';
+
+@import './scss/header/header';
+@import './scss/header/nav';
+
+@import './scss/welcome/welcome';
+@import './scss/welcome/welcome_form';
+@import './scss/main/main';
+@import './scss/main/main_form';
+@import './scss/main/about/about';
+@import './scss/main/about/about_feature';
+
+@import './scss/content/content';
+
+@import './scss/content/dress';
+@import './scss/content/collections';
+@import './scss/content/collection';
+@import './scss/content/news_post';
+@import './scss/content/news';
+@import './scss/content/last_news';
+@import './scss/content/brides';
+@import './scss/content/bride';
+@import './scss/content/bride_page';
+@import './scss/content/error_page';
+@import './scss/content/photo_project';
+@import './scss/content/photo_project_page';
+
+@import './scss/product/product';
+
+@import './scss/subscribe_form/subscribe_form';
+@import './scss/contact/contact';
+@import './scss/contact/contact_page';
+
+@import './scss/common/offsets';
+
+@import './scss/footer/footer';
+@import './scss/footer/footer_subscribe';
+@import './scss/footer/footer_menu';
+@import './scss/footer/footer_contact';
+@import './scss/footer/footer_socials';
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased
+}
+
+body {
+  font-size: 18px;
+  background-color: $white-pinker;
+  color: $color_dark;
+  z-index: 1;
+  position: relative;
+}
+
+a {
+  font-size: 1rem;
+  color: $color-dark;
+  text-decoration: none;
+}
+
+i {
+  color: #fff;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.page-wrapper {
+  max-width: $wrapper;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.wrapper {
+  max-width: $wrapper;
+  width: 100%;
+}
+
+.buttons {
+  -webkit-backface-visibility: hidden;
+  color: #222;
+  border: none;
+  font-size: 1.4rem;
+  background-image: linear-gradient(to right, #fee242, #fed919);
+  box-shadow: 0px 4px 4px 0 rgba(113, 99, 21, 0.35);
+  font-weight:bold;
+  border-radius: 32px;
+  transition: 0.3s;
+  padding: 16px 16px 15px;
+  min-width: 200px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    transform: translate(0, -1px);
+    box-shadow: 0px 5px 4px 0 rgba(113, 99, 21, 0.35);
+    transition: 0.3s;
+  }
+
+  &:focus {
+    transform: translate(0, 1px);
+    box-shadow: 0px 0px 4px 0 rgba(113, 99, 21, 0.35); 
+  }
+}
+
+.button__easy {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: #222;
+  }
+}
+
+.pulse::before {
+  z-index: 1;
+}
+
+.arrowto {
+  &__top {
+    color: $color-gray;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 3.5rem;
+    z-index: 11;
+    cursor: pointer;
+    @include transition($animation-normal);
+    &:hover {
+      color: $pink-button;
+      @include transition($animation-normal);
+    }
+  }
+}
+
+@media (max-width: $window_xl) {
+  .page-wrapper, .wrapper {
+    max-width: $wrapper-md;
+  }
+}

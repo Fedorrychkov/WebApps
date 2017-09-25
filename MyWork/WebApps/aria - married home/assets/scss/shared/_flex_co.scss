@@ -1,0 +1,14 @@
+.flex_co {
+
+  &__between {
+    @include flex_container(space-between, center, nowrap);
+
+    &_fstart {
+      @include flex_container(space-between, flex-start, nowrap);
+    }
+  }
+
+  &__fstart {
+    @include flex_container(flex-start, flex-start, nowrap);
+  }
+}

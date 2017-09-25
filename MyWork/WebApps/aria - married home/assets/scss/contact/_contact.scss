@@ -1,0 +1,39 @@
+.contact {
+  
+  &__phone {
+    position: relative;
+
+    &_link {
+      font-size: 1.2em;
+      position: relative;
+      padding-left: 27px;
+      font-family: "a_AntiqueTitulGr-Regular";
+
+      &:hover {
+        color: $color-darker;
+      }
+
+      &:hover .contact__phone_icon {
+        color: $color-darker;
+      }
+    }
+
+    &_icon {
+      color: $color-dark;
+      position: absolute;
+      left: 0;
+      top: 2px;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__button {
+    margin: 10px 0 0;
+  }
+
+  &__address {
+    font-size: 1.8rem;
+    line-height: 1;
+    font-family: "Gabriola";
+  }
+}

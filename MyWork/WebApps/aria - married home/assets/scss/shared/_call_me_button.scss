@@ -1,0 +1,21 @@
+.call_me_button {
+  background-color: $pink-button;
+  border: none;
+  color: $white;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  @include transition(0.2);
+
+  &:hover {
+    color: $white;
+    background-color: $pink-light;
+    @include transition(0.2);
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $pink-button;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  }
+}

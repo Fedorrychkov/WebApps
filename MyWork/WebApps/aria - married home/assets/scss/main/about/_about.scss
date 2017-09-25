@@ -1,0 +1,9 @@
+.about {
+  &__inner {
+    background-color: $white;
+  }
+
+  &__items {
+    flex-wrap: wrap;
+  }
+}

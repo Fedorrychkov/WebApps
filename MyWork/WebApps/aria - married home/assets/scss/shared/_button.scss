@@ -1,0 +1,14 @@
+.button {
+  padding: 10px 15px;
+  font-size: 1.3rem;
+  display: inline-block;
+
+  &__welcome {
+    color: $white;
+    background-color: $pink-button;
+
+    &:hover {
+      background-color: $pink-light;
+    }
+  }  
+}

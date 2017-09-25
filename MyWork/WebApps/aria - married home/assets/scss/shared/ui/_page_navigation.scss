@@ -1,0 +1,11 @@
+.page_navigation {
+  padding: $offset-sm 0 0;
+  border-top: 1px solid $color-light;
+  color: $color-gray;
+
+  & a {
+    &:hover {
+      color: $color-dirty;
+    }
+  }
+}
