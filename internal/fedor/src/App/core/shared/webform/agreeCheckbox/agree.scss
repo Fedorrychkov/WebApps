@@ -51,5 +51,8 @@
         margin: 0 $offset-sm;
         font-size: $font-lg;
         color: $white;
+        &.small {
+            font-size: $font-md;
+        }
     }
 }

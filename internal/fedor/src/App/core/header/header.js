@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {store, enLang, ruLang} from '../../Store/store';
+import {store} from '../../Store/store';
 import './header.scss';
 import NavComponent from '../shared/navigation/nav';
 

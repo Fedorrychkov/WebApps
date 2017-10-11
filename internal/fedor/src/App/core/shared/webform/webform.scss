@@ -13,6 +13,9 @@
         font-weight: 600;
         font-size: $offset-lg;
     }
+    & h2.medium .job{
+        font-size: $offset-xl/1.1;
+    }
     & .job {
         display: block;
         font-weight: 600;

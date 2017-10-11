@@ -18,7 +18,7 @@ export default class AgreeComponent extends Component {
         return (
             <label className="agree">
                 <input type="checkbox" name="checkbox" className="checkbox" />
-                <span className="agree-text">I agree to the processing of my personal data</span>
+                <span className={"agree-text " + this.props.styleClass}>{this.props.agreeText}</span>
             </label>
         );
     }
