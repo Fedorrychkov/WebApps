@@ -22,7 +22,7 @@ export default class HeaderComponent extends Component {
         let lang = store.getState().enlang;
         store.subscribe(() => this.forceUpdate());
         
-        switch(lang) {
+        switch(JSON.parse(lang)) {
             case true: return enLogo();
             case false: return ruLogo();
             default: return enLogo();

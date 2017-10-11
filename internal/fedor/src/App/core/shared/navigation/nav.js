@@ -40,7 +40,7 @@ export default class NavComponent extends Component {
         let lang = store.getState().enlang;
         store.subscribe(() => this.forceUpdate());
         
-        switch(lang) {
+        switch(JSON.parse(lang)) {
             case true: return enNav();
             case false: return ruNav();
             default: return enNav();
