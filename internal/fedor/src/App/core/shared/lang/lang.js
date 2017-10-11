@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
-
 import './lang.scss';
 import globe from './globe.svg';
 
+import {store, enLang, ruLang} from '../../../Store/store';
 export default class LangComponent extends Component {
-
+    
     constructor(props) {
         super(props);
+        
         this.state = { english: true };
-        this.changeLang = this.changeLang.bind(this);
+        this.changeLang = this.changeLang.bind(this);   
     }
     
     componentDidMount() {
@@ -18,6 +19,9 @@ export default class LangComponent extends Component {
     changeLang() {
         this.setState({english: !this.state.english});
         localStorage.setItem('enlang', !this.state.english);
+        !this.state.english?store.dispatch(enLang):store.dispatch(ruLang);
+        // console.log(store.getState());
+        // console.log(this.TOGGLE_LANG, localStorage.getItem('enlang'));
     }
     
     render() {

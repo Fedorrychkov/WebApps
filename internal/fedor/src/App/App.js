@@ -12,7 +12,7 @@ class App extends Component {
         <main className="main">
           <WelcomeComponent />
           <section className="content">
-
+{/* Exp component */}
           </section>
         </main>
       </div>

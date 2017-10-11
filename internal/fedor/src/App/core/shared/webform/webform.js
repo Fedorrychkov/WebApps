@@ -9,11 +9,7 @@ export default class WebformComponent extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            agree: true
-        }
-        
-        
+        this.state = { agree: true };
     }
 
     render() {
