@@ -1,0 +1,27 @@
+@import '../../../assets/scss/_variables.scss';
+
+.knowns {
+    padding: $offset-lg 0;
+
+    &-arg {
+        position: relative;
+        text-align: center;
+        // width: 75%;
+        // margin: 0 auto;
+    }
+
+    &-know {
+        font-size: $font-gr;
+        color: $white;
+        font-weight: bold;
+        z-index: 1;
+    }
+
+    &-things {
+        position: absolute;
+        z-index: -1;
+        color: $color-turq;
+        font-size: $font-gr;
+        opacity: .8;
+    }
+}

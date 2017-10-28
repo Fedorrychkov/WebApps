@@ -1,0 +1,13 @@
+@import '../../../assets/scss/_variables.scss';
+
+.skills {
+    padding: $offset-lg 0;
+
+    &-title {
+        font-size: $font-gr;
+        color: $white;
+        font-weight: bold;
+        z-index: 1;
+        text-align: center;
+    }
+}

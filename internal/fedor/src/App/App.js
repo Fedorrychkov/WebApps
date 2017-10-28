@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import HeaderComponent from './core/header/header';
 import WelcomeComponent from './core/welcome/welcome';
+import ExperienceComponent from './core/experience/experience';
 
 class App extends Component {
   
@@ -11,6 +12,7 @@ class App extends Component {
         <HeaderComponent />
         <main className="main">
           <WelcomeComponent />
+          <ExperienceComponent />
           <section className="content">
 {/* Exp component */}
           </section>
