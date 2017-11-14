@@ -1,0 +1,79 @@
+@import './assets/scss/variables';
+
+.app {
+
+}
+.header {
+    background-color: $color-gray;
+    min-height: $offset-xl;
+    height: 100%;
+}
+
+.updateuser {
+
+}
+
+.pane {
+    background-color: $white;
+    &-inner {
+        padding: $offset-md;
+    }
+    &-head {
+        border-bottom: 1px solid $color-lighter;
+        &--title {
+            color: $color-dirty;
+            font-size: $font-xl;
+        }
+        &--search {
+            color: $color-dirty;
+            font-size: $font-md;
+        }
+        &--controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &-body {
+        background-color: $white;
+        padding: $offset-md;
+    }
+
+    &-control {
+        &--icon {
+            display: inline-block;
+            margin-right: $offset-sm;
+        }
+        &--label, &--input {
+            color: $color-dirty;
+            font-size: $font-md;
+        }
+        &--label {
+            position: absolute;
+            top: 0;
+            left: $offset-sm;
+        }
+        &--field {
+            position: relative;
+            display: inline-block;
+        }
+        &--input {
+            background: none;
+            padding: 0;
+            padding-left: $offset-sm;
+            margin: 0;
+            border: none;
+        }
+        &--input:focus + &--label {
+            display: none;
+        }
+        &--form {
+            display: inline-block;
+        }
+        &--flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

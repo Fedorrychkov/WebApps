@@ -1,0 +1,36 @@
+@import './_variables';
+@import './_reset';
+@import './_fonts';
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "GothamProRegular";
+    background-color: $color-lighter;
+}
+.wrapper {
+    max-width: $content-md;
+    width: 100%;
+    margin: $offset-md auto;
+    display: block;
+}
+
+.content {
+    background-color: $white;
+
+    &-inner {
+        padding: $offset-md;
+    }
+    &-title {
+        color: $color-dirty;
+        font-size: $font-xl;
+    }
+}
