@@ -4,12 +4,26 @@ import axios from 'axios';
 
 
 
-export default class StuffService extends React.Component{
+export default class StaffService extends React.Component{
     
-    static getValue() {
+    static getStaffs() {
         return new Promise( (res, rej) => {
             
             axios.get(`http://avengers.view.indev-group.eu/test_api/staff/?query=`)
+                .then(
+                    (data) => {
+                        res(data);
+                    }, (err) => {
+                        rej(err);
+                    }
+                )
+        });
+    }
+
+    static getRank() {
+        return new Promise( (res, rej) => {
+            
+            axios.get(`http://avengers.view.indev-group.eu/test_api/posts/`)
                 .then(
                     (data) => {
                         res(data);

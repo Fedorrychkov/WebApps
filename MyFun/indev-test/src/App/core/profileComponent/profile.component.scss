@@ -1,0 +1,45 @@
+@import '../../assets/scss/variables';
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: $offset-md 0;
+    border-bottom: 1px solid $color-lighter;
+    &:nth-last-child(1) {
+        border: none;
+    }
+    &--left {
+        min-width: 144px;
+        max-width: 144px;
+    }
+    &--right {
+        width: 100%;
+        padding-left: $offset-md;
+        // display: flex;
+        // justify-content: space-between;
+        // flex-direction: column;
+    }
+    &--avatar {
+        width: 100%;
+    }
+    &--name {
+        color: $color-dark;
+        font-size: $font-gr;
+        padding-top: $font-xl;
+    }
+    &--birthday {
+        color: $color-dirty;
+        font-size: $font-md;
+        padding-top: $offset-md;
+    }
+    &--rank {
+        color: $color-dark;
+        font-size: $font-md;
+        padding-top: $offset-lg;
+    }
+    &--bottom {
+        text-align: right;
+        padding-top: 17px;
+    }
+}
