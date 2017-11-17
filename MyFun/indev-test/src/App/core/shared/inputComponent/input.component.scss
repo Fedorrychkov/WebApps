@@ -1,0 +1,65 @@
+@import '../../../assets/scss/variables';
+
+.input {
+    &-field {
+        width: 100%;
+        position: relative;
+        padding: $offset-sm 0 0;
+        margin: 0 0 $offset-sm;
+        display: block;
+    }
+    &-error {
+        .input-control {
+            border-color: $color-red;
+            &:focus {
+                border-color: $color-red;       
+                & + .input-label {
+                    color: $color-red;
+                }
+            }
+            & + .input-label {
+                color: $color-red;
+            }
+        }
+        .input-label {
+            color: $color-red;
+        }
+    }
+    &-notempty {
+        & + .input-label {
+            font-size: $font-xs;
+            top: 0;
+        }    
+    }
+    &-control {
+        width: inherit;
+        border: none;
+        border-bottom: 2px solid $color-lighter;
+        font-size: $font-md;
+        padding: $offset-xs 0;
+        color: $color-dark;
+        &:focus {
+            border-color: $color-blue-light;
+            transition: $animation-fast;
+            & + .input-label {
+                color: $color-blue-light;
+                font-size: $font-xs;
+                top: 0;
+            }
+        }
+    }
+    &-label {
+        color: $color-dirty;
+        font-size: $font-md;
+        transition: $animation-fast;
+        position: absolute;
+        top: $offset-md;
+        left: 0;
+        &--error {
+            position: absolute;
+            top: $offset-md;
+            right: 0;
+            color: $color-red;
+        }
+    }
+}

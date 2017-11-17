@@ -1,0 +1,54 @@
+
+@import '../../../assets/scss/variables';
+
+.edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: $offset-md 0;
+    &--left {
+        min-width: 224px;
+        max-width: 224px;
+    }
+    &--right {
+        width: 100%;
+        padding-left: $offset-md;
+    }
+    &--avatar {
+        display: block;
+    }
+    &--left {
+        position: relative;
+        &:hover {
+            cursor: pointer;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0,0,0,0.4);
+            }
+            & > div {
+                display: block;
+                opacity: 1;
+            }
+        }
+    }
+    &--reload {
+        &-img {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            color: $white;
+            font-size: $font-md;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transition: $animation-fast;
+        }
+    }
+}

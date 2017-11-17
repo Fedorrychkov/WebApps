@@ -81,6 +81,7 @@
 .button {
     font-size: $font-md;
     padding: 20px;
+    margin-left: $offset-md;
     min-width: 144px;
     border: none;
     background-color: $color-lighter2;
@@ -95,4 +96,50 @@
             background-color: $color-blue;
         }
     }
+}
+
+.arrow-down{
+    position: absolute;
+    top: $offset-md;
+    right: 0;
+    width: 8px;
+    height: 4px;
+    transition: $animation-fast;
+    cursor: pointer;
+    &.down:hover:before {
+        border-top-color: $color-blue-light;
+    }
+}
+.arrow-down.down:before{
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid $color-dark;
+}
+.arrow-down:before{
+    content: '';
+    position: absolute;
+    left:0;
+}
+
+
+
+.react-datepicker__input-container {
+    padding: $offset-sm 0 0;
+    width: 100%;
+    & > input {
+        width: 100%;
+        font-size: $font-md;
+        padding: $offset-sm 0;
+        margin: 0 0 $offset-sm;
+        border: none;
+        border-bottom: 2px solid $color-lighter;
+    }
+}
+.react-datepicker-wrapper {
+    width: 100%;
+}
+.react-datepicker-ignore-onclickoutside {
+    width: 100%;
 }

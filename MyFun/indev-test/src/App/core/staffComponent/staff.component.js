@@ -11,14 +11,12 @@ export default class StaffComponent extends Component {
   
   constructor(props) {
     super(props);
-    this.state = { staffs: null, ranks: null };
+    this.state = { staffs: null, ranks: null, isLoaded: false };
   }
   
   componentDidMount() {
     this.rankList()
     this.staffList();
-    // console.log(this.staffData);
-    // this.staffRender();
   }
   
   staffList() {
@@ -34,29 +32,36 @@ export default class StaffComponent extends Component {
     StaffService.getRank()
     .then(
       (data) => {
-        console.log(data.data);
-        this.setState({ ranks: data.data });
+        this.setState({ ranks: data.data, isLoaded: true });
       }
     )
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    if (this.state.staffs != nextState) {
+    if (this.state.staffs != nextState.staffs) {
+      return true;
+    }
+    if (this.state.ranks != nextState.ranks) {
+      return true;
+    }
+    if (this.state.isLoaded) {
       return true;
     }
     return false;
   }
   
   render() {
-    console.log(this.state.staffs);
-    var now = moment();
-    var staffData = this.state.staffs? this.state.staffs.map( (staff) => { 
-      return <ProfileComponent key={staff.id}
-                               image={staff.image}
-                               firstName={staff.first_name } 
-                               lastName={staff.last_name } 
-                               birthday={moment(staff.birth_date).locale('ru').format('D MMMM, YYYY')} 
-                               rank={staff.post} />}) : '';
+    if(this.state.staffs && this.state.ranks) {
+      var staffData = this.state.staffs? this.state.staffs.map( (staff) => { 
+        return <ProfileComponent key={staff.id}
+                                 image={staff.image}
+                                 firstName={staff.first_name } 
+                                 lastName={staff.last_name } 
+                                 birthday={moment(staff.birth_date).locale('ru').format('D MMMM, YYYY')} 
+                                 rank={staff.post}
+                                 rankList={this.state.ranks}
+                                  />}) : '';
+    }
     
     return (
       <main className="wrapper">
