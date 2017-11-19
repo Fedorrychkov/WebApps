@@ -1,0 +1,36 @@
+@import '../../../assets/scss/variables';
+
+.textarea {
+    &-field {
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+    &-control {
+        width: inherit;
+        resize: none;
+        height: 160px;
+        border: 2px solid $color-lighter;
+        padding: $offset-md*1.5 $offset-md;
+        &:focus {
+            border-color: $color-blue-light;
+        }
+    }
+    &-control:focus + &-label {
+        top: $offset-sm;
+        font-size: $font-sm;
+        color: $color-blue-light;
+    }
+    &-notempty + &-label {
+        top: $offset-sm;
+        font-size: $font-sm;
+    }
+    &-label {
+        font-size: $font-md;
+        position: absolute;
+        top: $offset-md*1.5;
+        left: $offset-md;
+        color: $color-dirty;
+        transition: $animation-fast;
+    }
+}
