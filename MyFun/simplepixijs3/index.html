@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
+    <script>
+        // The application will create a renderer using WebGL, if possible,
+        // with a fallback to a canvas render. It will also setup the ticker
+        // and the root stage PIXI.Container.
+        const app = new PIXI.Application();
+        const log = console.log;
+        
+        const xScene = app.renderer.width;
+        const yScene = app.renderer.height;
+
+        // The application will create a canvas element for you that you
+        // can then insert into the DOM.
+        document.body.appendChild(app.view)
+        const snakeBody = new PIXI.Graphics();
+        snakeBody.beginFill(0xFF0000);
+        snakeBody.drawCircle( 0, 0, 10 );
+        snakeBody.x = 100;
+        snakeBody.y = 100;
+        app.stage.addChild(snakeBody);
+
+        var left = keyboard(37),
+            up = keyboard(38),
+            right = keyboard(39),
+            down = keyboard(40);
+            
+        let speed = 0;
+        let max = 10;
+        let step = .5;
+
+        function keyboard(keyCode) {
+            var key = {};
+            key.code = keyCode;
+            key.isDown = false;
+            key.isUp = true;
+            key.press = undefined;
+            key.release = undefined;
+            //The `downHandler`
+            key.downHandler = function(event) {
+                if (event.keyCode === key.code) {
+                if (key.isUp && key.press) key.press();
+                key.isDown = true;
+                key.isUp = false;
+                }
+                event.preventDefault();
+            };
+
+            //The `upHandler`
+            key.upHandler = function(event) {
+                if (event.keyCode === key.code) {
+                if (key.isDown && key.release) key.release();
+                key.isDown = false;
+                key.isUp = true;
+                }
+                event.preventDefault();
+            };
+
+            //Attach event listeners
+            window.addEventListener(
+                "keydown", key.downHandler.bind(key), false
+            );
+            window.addEventListener(
+                "keyup", key.upHandler.bind(key), false
+            );
+            return key;
+        }
+
+        var right = keyboard(asciiKeyCodeNumber);
+        
+        right.press(() => {
+            speed += speed < max ? step: 0;
+            snakeBody.x < xScene ? snakeBody.x += speed: ''; 
+        });
+
+    </script>
+</body>
+</html>

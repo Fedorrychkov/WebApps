@@ -1,0 +1,78 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-Walk (1) {
+  background-image: url(cat-hero-walk.png);
+  background-position: 0px 0px;
+  width: 542px;
+  height: 474px;
+}
+.icon-Walk (10) {
+  background-image: url(cat-hero-walk.png);
+  background-position: 0px -474px;
+  width: 542px;
+  height: 474px;
+}
+.icon-Walk (2) {
+  background-image: url(cat-hero-walk.png);
+  background-position: 0px -948px;
+  width: 542px;
+  height: 474px;
+}
+.icon-Walk (3) {
+  background-image: url(cat-hero-walk.png);
+  background-position: 0px -1422px;
+  width: 542px;
+  height: 474px;
+}
+.icon-Walk (4) {
+  background-image: url(cat-hero-walk.png);
+  background-position: 0px -1896px;
+  width: 542px;
+  height: 474px;
+}
+.icon-Walk (5) {
+  background-image: url(cat-hero-walk.png);
+  background-position: 0px -2370px;
+  width: 542px;
+  height: 474px;
+}
+.icon-Walk (6) {
+  background-image: url(cat-hero-walk.png);
+  background-position: 0px -2844px;
+  width: 542px;
+  height: 474px;
+}
+.icon-Walk (7) {
+  background-image: url(cat-hero-walk.png);
+  background-position: 0px -3318px;
+  width: 542px;
+  height: 474px;
+}
+.icon-Walk (8) {
+  background-image: url(cat-hero-walk.png);
+  background-position: 0px -3792px;
+  width: 542px;
+  height: 474px;
+}
+.icon-Walk (9) {
+  background-image: url(cat-hero-walk.png);
+  background-position: 0px -4266px;
+  width: 542px;
+  height: 474px;
+}
