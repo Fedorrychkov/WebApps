@@ -14,7 +14,7 @@ export default class StaffComponent extends Component {
     this.state = { staffs: null, ranks: null, isLoaded: false };
   }
   
-  componentDidMount() {
+  componentWillMount() {
     this.rankList()
     this.staffList();
   }
