@@ -6,7 +6,7 @@
     width: 100%;
     display: block;
     // background-color: $color-red;
-    background-image: linear-gradient(to bottom,#e25242 0%,#df3e2c 50%,#d23220 100%);
+    // background-image: linear-gradient(to bottom,#e25242 0%,#df3e2c 50%,#d23220 100%);
     @include bgradient-nav(bottom, #e25242, #df3e2c, #d23220);
     border-radius: $radius-sm;
     overflow: hidden;
