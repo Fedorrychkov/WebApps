@@ -34,11 +34,11 @@ export const createRoutes: () => RouteConfig[] = () => [
     component: homeComponent,
   },
   {
-    path: '/about',
+    path: '/shop',
     component: aboutComponent,
   },
   {
-    path: '/list',
+    path: '/category',
     component: listComponent,
   }
 ];

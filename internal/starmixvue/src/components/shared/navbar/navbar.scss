@@ -1,0 +1,46 @@
+@import '../../../assets/sass/_variables';
+@import '../../../assets/sass/mixins/_flex';
+@import '../../../assets/sass/mixins/_bgradient';
+
+.navbar {
+    width: 100%;
+    display: block;
+    // background-color: $color-red;
+    background-image: linear-gradient(to bottom,#e25242 0%,#df3e2c 50%,#d23220 100%);
+    @include bgradient-nav(bottom, #e25242, #df3e2c, #d23220);
+    border-radius: $radius-sm;
+    overflow: hidden;
+    
+    &-item {
+        & a {
+            color: $white;
+            text-decoration: none;
+            padding: $offset-md $offset-md;
+            display: block;
+            transition: $animation-normal;
+            &:hover {
+                // background-color: rgba(255,255,255,.2);
+                @include bgradient-nav(top, #e25242, #df3e2c, #d23220);
+            }
+        }
+    }
+
+    &-item.active {
+        & a {
+            // color: $color-yellow-light;
+            background-color: rgba(255,255,255, .2);
+            &:hover {
+                background-color: none;
+            }
+        }
+    }
+
+    &-ul {
+        width: inherit;
+        @include flex(flex-start, center);
+    }
+
+    &-body {
+        width: inherit;
+    }
+}

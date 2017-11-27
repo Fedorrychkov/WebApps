@@ -1,0 +1,41 @@
+@import '../../../assets/sass/_variables';
+@import '../../../assets/sass/mixins/_flex';
+
+.header {
+    &-top {
+        @include flex(space-between, center);
+        padding: $offset-lg 0;
+
+        & .header-logo-link {
+            width: 25%;
+            min-width: 300px;
+            margin-right: $offset-md;
+            & .header-logo {
+                width: 100%;
+                
+                &-description {
+                    text-align: center;
+                    display: block;
+                    color: $color-dark;
+                    font-size: $font-sm;
+                }
+            }
+        }
+    }
+    
+    &-bottom {
+        @include flex(space-between, center);
+    }
+
+    &-category {
+        width: 25%;
+        min-width: 300px;
+        margin-right: $offset-md;
+        height: 48px;
+        background-color: $color-gray;
+        border-radius: $radius-sm;
+    }
+    &-navbar {
+        width: 75%;
+    }
+}

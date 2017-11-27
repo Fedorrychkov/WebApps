@@ -1,0 +1,10 @@
+<nav class="navbar">
+  
+  <div id="navbar" class="navbar-body">
+    <ul class="navbar-ul">
+      <li class="navbar-item" v-for="link in links" v-bind:class="{'active' : $route.path == link.path}">
+        <router-link v-bind:to="link.path">{{link.name}}</router-link>
+      </li>
+    </ul>
+  </div>
+</nav>
