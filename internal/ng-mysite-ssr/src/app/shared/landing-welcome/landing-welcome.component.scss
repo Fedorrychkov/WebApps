@@ -1,0 +1,78 @@
+@import '../../../assets/styles/variables';
+
+:host {
+    display: block;
+    position: relative;
+    color: $darkest-color;
+}
+
+
+.welcome {
+    max-height: 560px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: $gap-md auto;
+}
+
+.browser {
+    max-width: 60%;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: 1px 2px 10px $darker-color;
+    background: $white-color;
+    border-radius: $offset-sm;
+    max-height: 560px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    // left: 50%;
+    // transform: translate3d(-50%, 0, 0);
+    & .image {
+        width: 100%;
+    }
+    &__panel {
+        border-radius: $offset-sm $offset-sm 0 0;
+        height: 50px;
+        background-color: $light-color;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__address {
+        margin: 0 $offset-lg;
+        width: 100%;
+        background-color: $lightest-color;
+        height: 30px;
+        border-radius: $offset-sm;
+    }
+}
+.panel {
+    &__controls {
+        margin-left: $offset-sm;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.control {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: $gray-color;
+    margin-left: $offset-sm;
+    &__close {
+        background-color: $red-color;
+    }
+    &__change {
+        background-color: $yellow-color;
+    }
+    &__tray {
+        background-color: $green-color;
+    }
+}

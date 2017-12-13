@@ -5,4 +5,12 @@
 @import 'assets/styles/common/_buttons';
 @import 'assets/styles/common/_popup';
 @import 'assets/styles/common/_flex';
+@import 'assets/styles/common/_custom-link';
 @import 'assets/styles/common/_transition';
+
+.wrapper {
+    max-width: $screen-xl;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}

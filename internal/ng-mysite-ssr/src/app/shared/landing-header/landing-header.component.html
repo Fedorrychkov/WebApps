@@ -1,0 +1,20 @@
+<header class="header wrapper">
+  <div class="logo">
+    <h1><span>F</span>edor <span>R</span>ychkov<span>.</span></h1>
+  </div>
+  <div>
+    <nav class="navigation">
+      <ul class="navigation__items">
+        <li class="navigation__item" *ngFor="let item of navlinks">
+          <ng-container *ngIf="item.type === 'nav'">
+            <a  [routerLink]="item.url"
+                routerLinkActive="navigation__link--active"
+                class="navigation__link">
+                <span class="navigation__link-title">{{ item.title }}</span>
+            </a>
+        </ng-container>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

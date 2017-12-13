@@ -6,12 +6,14 @@ import { TranslateService } from '@ngx-translate/core';
 
 import { PortfolioComponent } from './portfolio.component';
 import { PortfolioComponentRoutingModule } from './portfolio-routing.module';
+import { SharedModule } from './../../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
-    PortfolioComponentRoutingModule
+    PortfolioComponentRoutingModule,
+    SharedModule
   ],
   providers: [
     TranslateService

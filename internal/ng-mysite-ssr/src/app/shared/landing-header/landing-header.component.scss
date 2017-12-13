@@ -1,0 +1,54 @@
+@import '../../../assets/styles/variables';
+
+:host {
+    display: block;
+    position: relative;
+}
+
+header {
+    color: $white-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $offset-md 0;
+}
+
+.navigation {
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        font-size: $font-size-md;
+        list-style: none;
+        margin: 0 $offset-md;
+    }
+    &__link {
+        text-decoration: none;
+        color: $white-color;
+        font-weight: 600;
+        transition: $animation-fast;
+        &:hover {
+            color: $color-turq;
+        }
+    }
+}
+
+.logo {
+    cursor: pointer;
+    & h1 {
+        font-size: $font-size-xl;
+        transition: $animation-normal;
+        & span {
+            color: $color-turq;
+            font-weight: 600;
+        }
+        &:hover {
+            color: $color-turq;
+            & span {
+                color: $white-color;
+            }
+        }
+    }
+}
