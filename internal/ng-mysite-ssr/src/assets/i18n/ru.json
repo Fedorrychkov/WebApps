@@ -1,0 +1,15 @@
+{
+    "navbar.section.profile": "Профиль",
+    "navbar.section.analytics": "Статистика",
+    "navbar.section.history": "История",
+    "navbar.section.settings": "Настройки",
+    
+    "auth.text.bold": "Teach and practice your english...",
+    "auth.text.slag": "...earn and keep your money",
+    "auth.faq.link": "Wanna learn english?",
+    "auth.login.label": "Логин",
+    "auth.password.label": "Пароль",
+
+    "call.button.success": "Ответить",
+    "call.button.hangup": "Отказаться"
+}

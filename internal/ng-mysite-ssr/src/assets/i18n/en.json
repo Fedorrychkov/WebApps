@@ -1,0 +1,15 @@
+{
+    "navbar.section.profile": "Profile",
+    "navbar.section.analytics": "Analytics",
+    "navbar.section.history": "History",
+    "navbar.section.settings": "Settings",
+
+    "auth.text.bold": "Teach and practice your english...",
+    "auth.text.slag": "...earn and keep your money",
+    "auth.faq.link": "Wanna learn english?",
+    "auth.login.label": "Username",
+    "auth.password.label": "Password",
+
+    "call.button.success": "Accept call",
+    "call.button.hangup": "Hangup"
+}

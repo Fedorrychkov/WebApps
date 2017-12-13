@@ -1,0 +1,19 @@
+@import '../_variables';
+
+.button {
+    color: $white-color;
+    background-color: $lighter-color;
+    padding: $offset-md;
+    font-weight: 300;
+    font-size: $font-size-sm;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &-success {
+        background-color: $olive-color;
+    }
+    &-warning {
+        background-color: $red-color;
+    }
+}
