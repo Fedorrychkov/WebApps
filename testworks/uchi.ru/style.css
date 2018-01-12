@@ -1,0 +1,43 @@
+*{   
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: block;
+    margin: inherit;
+    padding: inherit;
+    font-size: 16px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 32px 0;
+}
+
+.question {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.question div {
+    margin: 0 8px;
+    font-size: 1.8rem;
+}
+
+.number.warning {
+    background-color: orange;
+}
+
+.sprite {
+    width: 875px;
+    margin: 150px auto 0;
+}
+
+.sprite img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
