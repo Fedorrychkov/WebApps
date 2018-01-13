@@ -72,6 +72,8 @@ $(document).ready(function() {
         var findInput = $('section').find('input') ? $('section').find('input').css('left') : '0';
         if (findInput === undefined)
             findInput = 0;
+        if (y > 100)
+            y -= 15;
         var inputBody = "<input type='text' class='number-field input"+ i + "' id='"+ i +"input' style='left:"+ ( x + (parseFloat(findInput)*2) ) +"px; top: "+ y +"px;'/>";
         $('section').append(inputBody);
     }
@@ -84,9 +86,16 @@ $(document).ready(function() {
         var thisId = $(this).attr("id");
         var rightEl = $('body').find("#number" + parseFloat(thisId));
         var isRight;
-        if (parseFloat(thisEl.val()) === parseFloat(rightEl.html())) {
+        if ($(this).attr("id") === "input-answer") {
+            if(parseFloat(thisEl.val()) === getData[0].e) {
+                setTimeout( function(){
+                    $("#input-answer").css("border", "2px solid rgba(0,0,0,0)").attr("disabled", "");
+                }, 50);
+            }
+        }
+        if (parseFloat(thisEl.val()) === parseFloat(rightEl.html()) && $(this) != $("#answer input")) {
             isRight = true;
-            $(this).css("border", "2px solid white").attr("disabled", "");
+            $(this).css("border", "2px solid rgba(0,0,0,0)").attr("disabled", "");
             $(rightEl).removeClass("warning");
             if (isRight) {
                 $("input").last().show();
@@ -94,7 +103,8 @@ $(document).ready(function() {
 
                 $("input").each(function() {
                     if( $("input").length > 1 && $("input").last().prop("disabled")) {
-                        $("#answer").html(getData[0].e);
+                        // $("#answer").html(getData[0].e);
+                        $("#answer input").attr("disabled", false).val("");
                     }
                 });
             }

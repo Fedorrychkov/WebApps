@@ -83,11 +83,14 @@ svg path{
 input {
     display: block;
     position: absolute;
-    width: 20px;
+    width: 30px;
     text-align: center;
     margin-left: -10px;
+    border: 2px solid #333;
+    font-size: 1.6rem;
 }
 
 input:disabled {
-    background-color: #fff;
+    background: none;
+    border: none;
 }
