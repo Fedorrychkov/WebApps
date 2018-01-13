@@ -1,4 +1,3 @@
-
 function getArray(number) {
     var array = new Array();
 
@@ -9,21 +8,9 @@ function getArray(number) {
     return array;
 }
 
-function fillLine(widthBody, name, data) {
+function fillLine(widthBody, name, data, color) {
     var width = widthBody,
         height = 200;
-        
-            
-    // svg.append("line")
-    //     .style("stroke", "gray")
-    //     .style("stroke-width", "2")
-    //     .attr("x1", 0)
-    //     .attr("y1", 120)
-    //     .attr("x2", 200)
-    //     .attr("y2", 120);
-    // var line = d3.svg.line()
-    //     .x(function(d){return d.x;})
-    //     .y(function(d){return d.y;});
 
     var svg = d3.select("section").append("svg");
     
@@ -35,8 +22,8 @@ function fillLine(widthBody, name, data) {
     svg.attr("height", height)
         .attr("width", width); 
             
-    // добавляем путь
-    svg.append("path").attr("d", line(data));
+    svg.append("path").style("stroke", color).attr("d", line(data));
+    console.log(data);
 }
 
 
@@ -57,41 +44,65 @@ $(document).ready(function() {
     var numberSection = $('.number-section');
     
     var drop = lineBody.width()/20;
+    var isRight = true;
     for (var i = 0; i <= getData.length; i++){
-        var numHtml = $('#number'+i).html();
-        drowSegments(i, drop, numHtml);
-        var segHtml = $('#segment'+ i).width();
-        console.log(segHtml)
-        var data = [
-            {x: 0, y: 200},
-            {x: drop*parseInt(numHtml)/2, y: 200 - drop*parseInt(numHtml)/2},
-            {x: drop*parseInt(numHtml), y: 200}
-        ];
-        fillLine(segHtml, 'segment'+i, data);
+            var numHtml = $('#number'+i).html();
+            drowSegments(i, drop, numHtml);
+            var segHtml = $('#segment'+ i).width();
+            console.log(segHtml)
+            var data = [
+                {x: 0, y: 200},
+                {x: drop*parseFloat(numHtml)/2, y: 200 - drop*parseFloat(numHtml)/2},
+                {x: drop*parseFloat(numHtml), y: 200}
+            ];
+            var color;
+            if ($('section').find('svg').length < 1) {
+                color = "#ff0000"; 
+            } else {
+                // color = "#fff";
+            }
+            fillLine(segHtml, 'segment'+i, data, color);
+            inpBuild(drop*parseFloat(numHtml)/2, 200 - drop*parseFloat(numHtml)/2, i);
     }
     function drowSegments(number, drop, dataNumber) {
         var segmentBody = '<div class="segment" id="segment'+ number +'" style="width:'+parseInt(dataNumber)*drop+'px;"></div>';
         lineBody.append(segmentBody);
     }
+    function inpBuild(x, y, i) {
+        var findInput = $('section').find('input') ? $('section').find('input').css('left') : '0';
+        if (findInput === undefined)
+            findInput = 0;
+        var inputBody = "<input type='text' class='number-field input"+ i + "' id='"+ i +"input' style='left:"+ ( x + (parseFloat(findInput)*2) ) +"px; top: "+ y +"px;'/>";
+        $('section').append(inputBody);
+    }
 
+    $("input").last().hide();
+    $("svg").last().hide();
+
+    $("input").bind("change paste keyup", function() {
+        var thisEl = $(this);
+        var thisId = $(this).attr("id");
+        var rightEl = $('body').find("#number" + parseFloat(thisId));
+        var isRight;
+        if (parseFloat(thisEl.val()) === parseFloat(rightEl.html())) {
+            isRight = true;
+            $(this).css("border", "2px solid white").attr("disabled", "");
+            $(rightEl).removeClass("warning");
+            if (isRight) {
+                $("input").last().show();
+                $("svg").last().show();
+
+                $("input").each(function() {
+                    if( $("input").length > 1 && $("input").last().prop("disabled")) {
+                        $("#answer").html(getData[0].e);
+                    }
+                });
+            }
+        } else {
+            $(this).css("border", "2px solid red");
+            $(rightEl).addClass("warning");
+            isRight = false;
+        }
+    });
     
-    // var numberOne = '<div class="drop-style" style="margin-left:' + drop +'px;"> </div>';
-    
-    // for (var i = 0; i <= numberArr.length; i++)
-    //     lineBody.append(numberOne);
-    
-
-    var data1 = [
-        {x: 0, y: 200},
-        {x: drop*7/2, y: 200 - drop*7/2},
-        {x: drop*7, y: 200}
-    ];
-
-    var data2 = [
-        {x: drop*7, y: 200},
-        {x: drop*11, y: 200 - drop*11/2},
-        {x: drop*11, y: 200}
-    ];
-
-    // fillLine(lineBody.width(), data1, data2);
 });
